@@ -1,6 +1,6 @@
 #/bin/sh
 
-DBGAPKPATH="theme/build/outputs/apk/app-appdebug.apk"
+DBGAPKPATH="theme/build/outputs/apk/theme-appdebug.apk"
 
 if [ -z "$1" ]; then source buildDebugApp.sh; fi
 
