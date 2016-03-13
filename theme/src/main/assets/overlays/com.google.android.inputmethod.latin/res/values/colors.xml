@@ -1,0 +1,16 @@
+<resources>
+
+    <color name="theme_primary">#0d47a1</color>
+    <color name="theme_primary_dark">#0b2408</color>
+
+
+    <color name="key_background_lxx_light">#f4f4f4</color>
+    <color name="key_background_lxx_dark">#1e1e1e</color>
+    <color name="highlight_color_lxx_dark">#fe4284</color>
+    <color name="highlight_color_lxx_light">#448aff</color>
+    <color name="gesture_trail_color_lxx_dark">#0d47a1</color>
+    <color name="gesture_trail_color_lxx_light">#0d47a1</color>
+    <color name="sliding_key_input_preview_color_lxx_light">#b40d47a1</color>
+    <color name="sliding_key_input_preview_color_lxx_dark">#b40d47a1</color>
+
+</resources>
