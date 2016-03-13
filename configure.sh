@@ -33,8 +33,8 @@ if [ -z $ENV_BLUEMERALD_KEYPWD ]; then
   read -s -p "" THE_STOREPWD
   echo -en "\nKey      password: "
   read -s -p "" THE_KEYPWD
-  export ENV_BLUEMERALD_KEYPWD="$CORNOWSER_KEYPWD"
-  export ENV_BLUEMERALD_STOREPWD="$CORNOWSER_STOREPWD"
+  export ENV_BLUEMERALD_KEYPWD="$THE_KEYPWD"
+  export ENV_BLUEMERALD_STOREPWD="$THE_STOREPWD"
   echo -en "\n"
 fi
 
