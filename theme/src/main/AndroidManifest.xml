@@ -1,12 +1,22 @@
 <manifest package="io.xdevs23.theme.bluemerald.cm"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+    <uses-feature android:required="true" android:name="org.cyanogenmod.theme" />
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="23" />
+
+    <meta-data android:name="org.cyanogenmod.theme.name" android:value="@string/theme_name"/>
+    <meta-data android:name="org.cyanogenmod.theme.author" android:value="@string/theme_author" />
+    <meta-data android:name="org.cyanogenmod.theme.email" android:value="@string/theme_email" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:hasCode="false">
 
     </application>
 
