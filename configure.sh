@@ -27,7 +27,7 @@ if [ "$1" == "--gpw" ]; then
   export ENV_BLUEMERALD_STOREPWD="$3"
 fi
 
-if [ -z $ENV_CORNOWSER_KEYPWD ]; then
+if [ -z $ENV_BLUEMERALD_KEYPWD ]; then
   echo "First of all the keystore needs to be configured."
   echo -en "\nKeystore password: "
   read -s -p "" THE_STOREPWD
