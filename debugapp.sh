@@ -20,9 +20,18 @@ elif [ "$1" == "--reinstall" ]; then
   adb shell pm set-install-location 1
   adb shell pm install -rdtf /sdcard/BECustom.apk
 else
+  echo "Pushing to device..."
   adb push $DBGAPKPATH /sdcard/BECustom.apk
+  echo "Trying to get root access..."
   adb root>/dev/null
+  echo "Waiting for device..."
   adb wait-for-device
+  echo "Installing..."
   adb shell pm set-install-location 1
   adb shell pm install -rdtf /sdcard/BECustom.apk
+  echo "Applying default theme..."
+  adb shell tm apply system
+  echo "Applying theme..."
+  adb shell tm apply io.xdevs23.theme.bluemerald.cm
+  echo "Done!"
 fi
