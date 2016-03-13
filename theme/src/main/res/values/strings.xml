@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">BluEmerald</string>
+    <string name="app_name">BluEmerald Theme</string>
+
+    <string name="theme_name">BluEmerald</string>
+    <string name="theme_author">xdevs23</string>
+    <string name="theme_email">xdevs23@outlook.com</string>
 </resources>
