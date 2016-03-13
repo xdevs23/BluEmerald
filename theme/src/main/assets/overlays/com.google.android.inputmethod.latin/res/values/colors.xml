@@ -13,4 +13,16 @@
     <color name="sliding_key_input_preview_color_lxx_light">#b40d47a1</color>
     <color name="sliding_key_input_preview_color_lxx_dark">#b40d47a1</color>
 
+    <color name="keyboard_bg">#ff1e1e1e</color>
+
+    <color name="keyboard_light_bg">@color/key_background_lxx_light</color>
+    <color name="keyboard_dark_bg">@color/key_background_lxx_dark</color>
+
+    <color name="accent">#0d47a1</color>
+
+    <color name="text_color">#feffffff</color>
+
+    <color name="emoji_tab_page_indicator_background_lxx_light">#00fff000</color>
+    <color name="emoji_tab_page_indicator_background_lxx_dark">#00fff000</color>
+
 </resources>
