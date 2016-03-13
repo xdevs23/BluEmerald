@@ -1,20 +1,51 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-    }
     compileSdkVersion 23
     buildToolsVersion '24.0.0 rc1'
     defaultConfig {
         applicationId "io.xdevs23.theme.bluemerald.cm"
-        minSdkVersion 23
+        minSdkVersion 21
         targetSdkVersion 23
         versionCode 2016000000
         versionName "1.0"
     }
+
+    signingConfigs {
+        release {
+            storeFile file("../privatekey.jks")
+            storePassword System.getenv("ENV_BLUEMERALD_STOREPWD")
+            keyAlias "xd"
+            keyPassword System.getenv("ENV_BLUEMERALD_KEYPWD")
+        }
+
+        appdebug {
+            storeFile file("../privatekey.jks")
+            storePassword System.getenv("ENV_BLUEMERALD_STOREPWD")
+            keyAlias "xd"
+            keyPassword System.getenv("ENV_BLUEMERALD_KEYPWD")
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
+            debuggable true
+            zipAlignEnabled true
+        }
+
+        debug {
+            minifyEnabled false
+            debuggable true
+            zipAlignEnabled true
+        }
+
+        appdebug {
+            //noinspection GroovyAssignabilityCheck
+            signingConfig signingConfigs.appdebug
+            minifyEnabled false
+            debuggable true
+            zipAlignEnabled true
         }
     }
 }
