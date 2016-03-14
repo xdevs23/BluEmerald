@@ -1,0 +1,7 @@
+<resources>
+
+    <color name="clock_white">#feffffff</color>
+
+    <color name="keyguard_sim_view_divider">#24f0fcfe</color>
+
+</resources>

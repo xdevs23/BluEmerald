@@ -50,16 +50,16 @@
 
 
     <!-- The color of the legacy notification background -->
-    <color name="notification_legacy_background_color">#fe1a1a1a</color>
+    <color name="notification_legacy_background_color">#dffefefe</color>
 
     <!-- The color of the material notification background -->
-    <color name="notification_material_background_color">#fb1e1e1e</color>
+    <color name="notification_material_background_color">#dffefefe</color>
 
     <!-- The color of the material notification background when dimmed -->
     <color name="notification_material_background_dimmed_color">#c41e1e1e</color>
 
     <!-- The color of the material notification background when low priority -->
-    <color name="notification_material_background_low_priority_color">#db121212</color>
+    <color name="notification_material_background_low_priority_color">#dffefefe</color>
 
     <!-- The color of the material notification background for media notifications when no custom
          color is specified -->
