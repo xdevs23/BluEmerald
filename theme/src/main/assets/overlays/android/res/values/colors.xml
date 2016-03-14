@@ -12,8 +12,8 @@
     <color name="dim_foreground_light_inverse">#bebebe</color>
     <color name="dim_foreground_light_inverse_disabled">#80bebebe</color>
     <color name="hint_foreground_light">#808080</color>
-    <color name="highlighted_text_dark">#9983CC39</color>
-    <color name="highlighted_text_light">#9983CC39</color>
+    <color name="highlighted_text_dark">#9983cc39</color>
+    <color name="highlighted_text_light">#9983cc39</color>
     <color name="link_text_dark">#3366ff</color>
     <color name="link_text_light">#0000ee</color>
     <color name="suggestion_highlight_text">#177bbd</color>
@@ -40,17 +40,17 @@
     <color name="lock_pattern_view_error_color">#fff41f1f</color>
 
     <!-- FaceLock -->
-    <color name="facelock_spotlight_mask">#CC010101</color>
+    <color name="facelock_spotlight_mask">#cc010101</color>
 
     <color name="micro_text_light">#484848</color>
 
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
-    <color name="notification_action_color_filter">@color/secondary_text_material_light</color>
+    <color name="notification_action_color_filter">#fefbfbfb</color>
 
-    <color name="notification_media_primary_color">@color/primary_text_material_dark</color>
-    <color name="notification_media_secondary_color">@color/secondary_text_material_dark</color>
+    <color name="notification_media_primary_color">#fefefefe</color>
+    <color name="notification_media_secondary_color">#fefefefe</color>
 
-    <color name="notification_progress_background_color">#561E88E5</color>
+    <color name="notification_progress_background_color">#561e88e5</color>
 
     <!-- Keyguard colors -->
     <color name="keyguard_avatar_frame_color">#f0ffffff</color>
@@ -86,10 +86,10 @@
     <color name="ripple_material_dark">#4d90caf9</color>
     <color name="ripple_material_light">#1f0d47a1</color>
 
-    <color name="accent_material_light">#2196F3</color>
-    <color name="accent_material_dark">#90CAF9</color>
+    <color name="accent_material_light">#1976d2</color>
+    <color name="accent_material_dark">#1e88e5</color>
 
-    <color name="button_material_dark">#ff0d47a1</color>
+    <color name="button_material_dark">#ff1e88e5</color>
     <color name="button_material_light">#ff90caf9</color>
 
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
@@ -98,14 +98,14 @@
     <color name="switch_thumb_disabled_material_light">#febdbdbd</color>
 
 
-    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
-    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <color name="hint_foreground_material_dark">#b0fbfbfb</color>
+    <color name="hint_foreground_material_light">#b0040404</color>
 
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
 
-    <color name="link_text_material_dark">#90CAF9</color>
-    <color name="link_text_material_light">#2196F3</color>
+    <color name="link_text_material_dark">#90caf9</color>
+    <color name="link_text_material_light">#2196f3</color>
 
     <!-- Text & foreground colors -->
 
@@ -162,7 +162,7 @@
     <!-- General purpose colors for Holo-themed elements -->
 
     <color name="holo_blue_light">#ff2196f3</color>
-    <color name="holo_gray_light">#32A0A0A0</color>
+    <color name="holo_gray_light">#32a0a0a0</color>
     <color name="holo_green_light">#ff43a047</color>
     <color name="holo_red_light">#ffef5350</color>
     <color name="holo_blue_dark">#ff1e88e5</color>
