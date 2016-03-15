@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_bar_top_highlight">@*common:color/blue_700</color>
+    <color name="status_bar_blue_background">@*common:color/blue_900</color>
+    <color name="error_state">#ffb30f0f</color>
+</resources>

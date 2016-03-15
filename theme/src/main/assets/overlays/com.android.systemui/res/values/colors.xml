@@ -9,7 +9,7 @@
     <color name="system_primary_color">#ff14191f</color>
 
     <!-- Quick settings header background -->
-    <color name="system_secondary_color">#ff0d1820</color>
+    <color name="system_secondary_color">#ff0f1920</color>
 
     <!--- Accent color -->
     <color name="system_accent_color">#ff1e88e5</color>
@@ -25,6 +25,7 @@
     <color name="data_usage_secondary">#99ffffff</color>
     <color name="data_usage_graph_track">#33ffffff</color>
     <color name="data_usage_graph_warning">#ffffffff</color>
+
     <color name="status_bar_clock_color">#feffffff</color>
 
 
@@ -54,22 +55,21 @@
 
     <!-- The color of the material notification background -->
     <color name="notification_material_background_color">#dffefefe</color>
+    <!-- The color of the material notification background when low priority -->
+    <color name="notification_material_background_low_priority_color">@color/notification_material_background_color</color>
+    <!-- The color of the material notification background for media notifications when no custom
+     color is specified -->
+    <color name="notification_material_background_media_default_color">@color/notification_material_background_color</color>
 
     <!-- The color of the material notification background when dimmed -->
-    <color name="notification_material_background_dimmed_color">#c41e1e1e</color>
+    <color name="notification_material_background_dimmed_color">#d0fdfdfd</color>
 
-    <!-- The color of the material notification background when low priority -->
-    <color name="notification_material_background_low_priority_color">#dffefefe</color>
-
-    <!-- The color of the material notification background for media notifications when no custom
-         color is specified -->
-    <color name="notification_material_background_media_default_color">#fb1e1e1e</color>
 
     <!-- The color of the ripples on the untinted notifications -->
-    <color name="notification_ripple_untinted_color">#24ffffff</color>
+    <color name="notification_ripple_untinted_color">#24000000</color>
 
     <!-- The color of the ripples on the low priority notifications -->
-    <color name="notification_ripple_color_low_priority">#24ffffff</color>
+    <color name="notification_ripple_color_low_priority">#24000000</color>
 
     <!-- The color of the ripples on the tinted notifications -->
     <color name="notification_ripple_tinted_color">#30ffffff</color>

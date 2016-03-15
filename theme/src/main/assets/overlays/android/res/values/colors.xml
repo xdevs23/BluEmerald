@@ -67,7 +67,7 @@
     <!-- cm_colors.xml -->
 
 
-    <color name="notification_mtrl_big_picture_bg">#CCEEEEEE</color>
+    <color name="notification_mtrl_big_picture_bg">#cceeeeee</color>
 
 
     <!-- colors_material.xml -->
@@ -83,8 +83,8 @@
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff767676</color>
 
-    <color name="ripple_material_dark">#4d90caf9</color>
-    <color name="ripple_material_light">#1f0d47a1</color>
+    <color name="ripple_material_dark">@*common:color/ripple_color_dark</color>
+    <color name="ripple_material_light">@*common:color/ripple_color_light</color>
 
     <color name="accent_material_light">#1976d2</color>
     <color name="accent_material_dark">#1e88e5</color>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary_lighter">@*common:color/blue_500</color>
+    <color name="primary">@*common:color/blue_600</color>
+    <color name="primary_dark">@*common:color/blue_800</color>
+
+    <color name="dark_bg_accent">#1e1e1e</color>
+
+    <color name="ripple_color_dark">#A01e88e5</color>
+    <color name="ripple_color_light">#A01565c0</color>
+
+    <color name="accent">@*common:color/blue_600</color>
+
+</resources>
