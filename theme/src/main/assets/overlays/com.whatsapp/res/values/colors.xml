@@ -4,7 +4,7 @@
     <color name="background_tab_pressed">#66f0f0f0</color>
     <color name="list_item_selected">#661E88E5</color>
 
-    <color name="about_statusbar">#ff242424</color>
+    <color name="about_statusbar">#ff262626</color>
 
     <color name="accent">#ff1976d2</color>
     <color name="accent_material_dark">#ff42a5f5</color>
@@ -161,15 +161,15 @@
 
     <color name="primary">#ff1e1e1e</color>
     <color name="primary_dark">#ff0f0f0f</color>
-    <color name="primary_dark_material_dark">@*common:color/dark_bg_accent</color>
-    <color name="primary_dark_material_light">@*common:color/dark_bg_special</color>
+    <color name="primary_dark_material_dark">@android:color/white</color>
+    <color name="primary_dark_material_light">@color/material_grey_900</color>
     <color name="primary_dark_voip">#ff0f0f0f</color>
     <color name="primary_material_light">@color/material_grey_900</color>
     <color name="primary_material_dark">@color/material_grey_100</color>
-    <color name="primary_text_default_material_dark">@*common:color/_primary_text_white</color>
-    <color name="primary_text_default_material_light">@*common:color/_primary_text_white</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4dffffff</color>
-    <color name="primary_text_disabled_material_light">#dafefefe</color>
+    <color name="primary_text_disabled_material_light">#39000000</color>
 
     <color name="primary_voip">#ff1e1e1e</color>
 

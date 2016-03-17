@@ -25,5 +25,7 @@
 
     <color name="_primary_text_white">#fefefefe</color>
     <color name="_primary_text_black">#fe000000</color>
+    <color name="_secondary_text_white">#dbfbfbfb</color>
+    <color name="_secondary_text_black">#db020202</color>
 
 </resources>

@@ -8,18 +8,11 @@ android {
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 2016000000
-        versionName "1.0"
+        versionName "1.0.0"
     }
 
     signingConfigs {
-        release {
-            storeFile file("../privatekey.jks")
-            storePassword System.getenv("ENV_BLUEMERALD_STOREPWD")
-            keyAlias "xd"
-            keyPassword System.getenv("ENV_BLUEMERALD_KEYPWD")
-        }
-
-        appdebug {
+        main {
             storeFile file("../privatekey.jks")
             storePassword System.getenv("ENV_BLUEMERALD_STOREPWD")
             keyAlias "xd"
@@ -29,6 +22,8 @@ android {
 
     buildTypes {
         release {
+            //noinspection GroovyAssignabilityCheck
+            signingConfig signingConfigs.main
             minifyEnabled false
             zipAlignEnabled true
         }
@@ -41,7 +36,7 @@ android {
 
         appdebug {
             //noinspection GroovyAssignabilityCheck
-            signingConfig signingConfigs.appdebug
+            signingConfig signingConfigs.main
             minifyEnabled false
             debuggable true
             zipAlignEnabled true

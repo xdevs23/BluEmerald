@@ -22,6 +22,18 @@
         <item name="android:textColor">@*common:color/_primary_text_white</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
+    <style name="TextAppearance.Material.Notification.Info" parent="@style/TextAppearance.Material.Notification">
+        <item name="android:textColor">@*common:color/_secondary_text_white</item>
+        <item name="android:textSize">@dimen/notification_subtext_size</item>
+    </style>
+    <style name="TextAppearance.Material.Notification.Line2" parent="@style/TextAppearance.Material.Notification">
+        <item name="android:textColor">@*common:color/_primary_text_white</item>
+        <item name="android:textSize">@dimen/notification_subtext_size</item>
+    </style>
+    <style name="TextAppearance.Material.Notification.Time" parent="@style/TextAppearance.Material.Notification">
+        <item name="android:textColor">@*common:color/_secondary_text_white</item>
+        <item name="android:textSize">@dimen/notification_subtext_size</item>
+    </style>
 
     <!-- Dark theme system-wide -->
 
