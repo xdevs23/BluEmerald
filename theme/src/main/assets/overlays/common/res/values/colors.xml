@@ -13,6 +13,7 @@
     <color name="dark_bg_accent">#1e1e1e</color>
     <color name="dark_bg_accent_lighter">#282828</color>
     <color name="dark_bg_accent_darker">#121212</color>
+    <color name="dark_bg_special">#ff303033</color>
 
     <color name="ripple_color_dark">#A01e88e5</color>
     <color name="ripple_color_light">#A01565c0</color>
