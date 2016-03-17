@@ -234,6 +234,8 @@
         <color name="blue_700">#1976D2</color>
         <color name="blue_800">#1565C0</color>
         <color name="blue_900">#0D47A1</color>
+        <color name="blue_950">#062047</color>
+        <color name="blue_980">#020b17</color>
         <color name="blue_A100">#82B1FF</color>
         <color name="blue_A200">#448AFF</color>
         <color name="blue_A400">#2979FF</color>

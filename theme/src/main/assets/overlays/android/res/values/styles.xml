@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark settings theme -->
+    <style name="Theme.Material.Settings" parent="@android:style/Theme.Material">
+        <item name="android:colorPrimary">@*common:color/primary_darker</item>
+        <item name="android:colorPrimaryDark">@*common:color/primary_dark</item>
+        <item name="android:colorAccent">@*common:color/accent</item>
+        <item name="android:colorControlActivated">@*common:color/primary</item>
+        <item name="android:windowBackground">@*common:color/dark_bg_accent</item>
+    </style>
+
+    <!-- Notification text color -->
+    <style name="TextAppearance.Material.Notification" parent="@android:style/TextAppearance.Material">
+        <item name="android:textSize">@dimen/notification_text_size</item>
+        <item name="android:textColor">@*common:color/_primary_text_white</item>
+    </style>
+    <style name="TextAppearance.Material.Notification.Emphasis" parent="@style/TextAppearance.Material.Notification">
+        <item name="android:textColor">#aafefefe</item>
+    </style>
+    <style name="TextAppearance.Material.Notification.Title" parent="@style/TextAppearance.Material.Notification">
+        <item name="android:textSize">@dimen/notification_title_text_size</item>
+        <item name="android:textColor">@*common:color/_primary_text_white</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <!-- Dark theme system-wide -->
+
+    <style name="Theme.DeviceDefault.InputMethod" parent="@android:style/Theme.Material.InputMethod" />
+
+    <style name="Theme.DeviceDefault.Light" parent="@android:style/Theme.Material" />
+
+    <style name="Theme.DeviceDefault.Light.NoActionBar" parent="@android:style/Theme.Material.NoActionBar" />
+
+    <style name="Theme.DeviceDefault.Light.NoActionBar.Fullscreen" parent="@android:style/Theme.Material.NoActionBar.Fullscreen" />
+
+    <style name="Theme.DeviceDefault.Light.DarkActionBar" parent="@android:style/Theme.Material">
+        <item name="android:popupTheme">@android:style/ThemeOverlay.Material.Dark</item>
+    </style>
+
+    <style name="Theme.DeviceDefault.Resolver" parent="@android:style/Theme.Material">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listPreferredItemPaddingStart">@dimen/dialog_padding_material</item>
+        <item name="android:listPreferredItemPaddingEnd">@dimen/dialog_padding_material</item>
+        <item name="android:colorControlActivated">@*common:color/accent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+
+    <style name="Theme.DeviceDefault.Light.Panel" parent="@android:style/Theme.Material.Panel" />
+
+    <style name="Theme.DeviceDefault.Light.SearchBar" parent="@android:style/Theme.Material.Panel" />
+
+    <style name="Theme.DeviceDefault.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+
+    <style name="Theme.DeviceDefault.Light.Dialog.Alert" parent="@android:style/Theme.Material.Dialog" />
+
+    <style name="Theme.DeviceDefault.Light.Dialog.MinWidth" parent="@android:style/Theme.Material.Dialog.MinWidth" />
+
+    <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar" parent="@android:style/Theme.Material.Dialog.NoActionBar" />
+
+    <style name="Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth" parent="@android:style/Theme.Material.Dialog.NoActionBar.MinWidth" />
+
+    <style name="Theme.DeviceDefault.Light.Dialog.Presentation" parent="@android:style/Theme.Material.NoActionBar.Fullscreen" />
+
+    <style name="Theme.DeviceDefault.Light.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge" />
+
+    <style name="Theme.DeviceDefault.Light.DialogWhenLarge.NoActionBar" parent="@android:style/Theme.Material.DialogWhenLarge.NoActionBar" />
+
+    <style name="Theme.DeviceDefault.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge" />
+
+    <style name="Theme.DeviceDefault.DialogWhenLarge.NoActionBar" parent="@android:style/Theme.Material.DialogWhenLarge.NoActionBar" />
+
+    <style name="Theme.DeviceDefault.Panel" parent="@android:style/Theme.Material.Panel" />
+
+    <style name="Theme.DeviceDefault.Wallpaper" parent="@android:style/Theme.Material.Wallpaper" />
+
+    <style name="Theme.DeviceDefault.Wallpaper.NoTitleBar" parent="@android:style/Theme.Material.Wallpaper.NoTitleBar" />
+</resources>
