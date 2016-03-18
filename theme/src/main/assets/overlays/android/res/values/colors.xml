@@ -6,11 +6,11 @@
     <color name="dim_foreground_dark_disabled">#80bebebe</color>
     <color name="dim_foreground_dark_inverse">#323232</color>
     <color name="dim_foreground_dark_inverse_disabled">#80323232</color>
-    <color name="hint_foreground_dark">#808080</color>
     <color name="dim_foreground_light">#323232</color>
     <color name="dim_foreground_light_disabled">#80323232</color>
     <color name="dim_foreground_light_inverse">#bebebe</color>
     <color name="dim_foreground_light_inverse_disabled">#80bebebe</color>
+    <color name="hint_foreground_dark">#808080</color>
     <color name="hint_foreground_light">#808080</color>
     <color name="highlighted_text_dark">#9983cc39</color>
     <color name="highlighted_text_light">#9983cc39</color>
@@ -24,12 +24,12 @@
     <color name="lighter_gray">#dedede</color>
     <color name="darker_gray">#969696</color>
 
-    <!-- keyguard tab -->
-    <color name="keyguard_text_color_normal">#ffffff</color>
+    <!-- Leyguard tab -->
+    <color name="keyguard_text_color_normal">@*common:color/_primary_text_white</color>
     <color name="keyguard_text_color_unlock">#a0db56</color>
     <color name="keyguard_text_color_decline">#fa0848</color>
 
-    <!-- keyguard clock -->
+    <!-- Keyguard clock -->
     <color name="lockscreen_clock_foreground">#feffffff</color>
     <color name="lockscreen_clock_am_pm">#f0fbfbfb</color>
     <color name="lockscreen_owner_info">#fea0a0a0</color>
@@ -75,9 +75,9 @@
 
 
     <color name="background_material_dark">@*common:color/dark_bg_accent</color>
-    <color name="background_material_light">#ffefefef</color>
-    <color name="background_floating_material_dark">#ff424242</color>
-    <color name="background_floating_material_light">#ffefefef</color>
+    <color name="background_material_light">@*common:color/light_bg_accent</color>
+    <color name="background_floating_material_dark">@*common:color/dark_bg_special</color>
+    <color name="background_floating_material_light">@*common:color/light_bg_accent_lighter</color>
 
     <color name="primary_material_dark">#ff222222</color>
     <color name="primary_material_light">#ffefefef</color>
@@ -87,11 +87,11 @@
     <color name="ripple_material_dark">@*common:color/ripple_color_dark</color>
     <color name="ripple_material_light">@*common:color/ripple_color_light</color>
 
-    <color name="accent_material_light">#1976d2</color>
-    <color name="accent_material_dark">#1e88e5</color>
+    <color name="accent_material_light">@*common:color/primary_darker</color>
+    <color name="accent_material_dark">@*common:color/primary</color>
 
-    <color name="button_material_dark">#ff1e88e5</color>
-    <color name="button_material_light">@*common:color/primary_darker</color>
+    <color name="button_material_dark">@*common:color/primary</color>
+    <color name="button_material_light">@*common:color/primary_lighter</color>
 
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
@@ -110,11 +110,11 @@
 
     <!-- Text & foreground colors -->
 
-    <color name="primary_text_default_material_light">#de000000</color>
-    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="primary_text_default_material_light">@*common:color/_primary_text_black</color>
+    <color name="secondary_text_default_material_light">@*common:color/_secondary_text_black</color>
 
-    <color name="primary_text_default_material_dark">#ffffffff</color>
-    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="primary_text_default_material_dark">@*common:color/_primary_text_white</color>
+    <color name="secondary_text_default_material_dark">@*common:color/_secondary_text_white</color>
 
     <!-- Primary & accent colors -->
 
@@ -137,8 +137,8 @@
     <!-- colors_holo.xml -->
 
 
-    <color name="background_holo_dark">#ff000000</color>
-    <color name="background_holo_light">#fff4f4f4</color>
+    <color name="background_holo_dark">@*common:color/dark_bg_accent_darker</color>
+    <color name="background_holo_light">@*common:color/light_bg_accent</color>
     <color name="bright_foreground_holo_dark">@color/background_holo_light</color>
     <color name="bright_foreground_holo_light">@color/background_holo_dark</color>
     <color name="bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
@@ -157,8 +157,8 @@
     <color name="hint_foreground_holo_light">#808080</color>
     <color name="highlighted_text_holo_dark">#6633b5e5</color>
     <color name="highlighted_text_holo_light">#6633b5e5</color>
-    <color name="link_text_holo_dark">#5c5cff</color>
-    <color name="link_text_holo_light">#0248eb</color>
+    <color name="link_text_holo_dark">@color/link_text_material_dark</color>
+    <color name="link_text_holo_light">@color/link_text_material_light</color>
 
     <!-- General purpose colors for Holo-themed elements -->
 
@@ -168,12 +168,12 @@
     <color name="holo_red_light">#ffef5350</color>
     <color name="holo_blue_dark">#ff1e88e5</color>
     <color name="holo_green_dark">#ff66bb6a</color>
-    <color name="holo_red_dark">#ffcc0000</color>
-    <color name="holo_purple">#ffaa66cc</color>
-    <color name="holo_orange_light">#ffffbb33</color>
-    <color name="holo_orange_dark">#ffff8800</color>
+    <color name="holo_red_dark">#ffd32f2f</color>
+    <color name="holo_purple">#ffab47bc</color>
+    <color name="holo_orange_light">#ffff8a65</color>
+    <color name="holo_orange_dark">#ffff5722</color>
     <color name="holo_blue_bright">#ff00b8d4</color>
-    <color name="holo_gray_bright">#33CCCCCC</color>
+    <color name="holo_gray_bright">#33cccccc</color>
 
     <!-- Forward compatibility for Material-style theme colors -->
 
@@ -181,16 +181,44 @@
     <color name="holo_primary">#ffe6e6e6</color>
     <color name="holo_primary_light">#ffffffff</color>
     <color name="holo_control_activated">@color/holo_blue_light</color>
-    <color name="holo_control_normal">#39cccccc</color>
-    <color name="holo_button_pressed">#59f0f0f0</color>
-    <color name="holo_button_normal">#bd292f34</color>
+    <color name="holo_control_normal">#391e88e5</color>
+    <color name="holo_button_pressed">#591e88e5</color>
+    <color name="holo_button_normal">#bd1e88e5</color>
 
     <color name="holo_light_primary_dark">#ff000000</color>
     <color name="holo_light_primary">#ffe6e6e6</color>
     <color name="holo_light_primary_light">#ffffffff</color>
     <color name="holo_light_control_activated">@color/holo_control_activated</color>
-    <color name="holo_light_control_normal">#dacccccc</color>
-    <color name="holo_light_button_pressed">#66666666</color>
-    <color name="holo_light_button_normal">#b3cccccc</color>
+    <color name="holo_light_control_normal">#da1e88e5</color>
+    <color name="holo_light_button_pressed">#661e88e5</color>
+    <color name="holo_light_button_normal">#b31e88e5</color>
+
+
+    <!-- colors_legacy.xml -->
+
+
+    <!-- Highlight colors for the legacy themes -->
+
+    <color name="legacy_pressed_highlight">@*common:color/primary_lighter</color>
+    <color name="legacy_selected_highlight">@*common:color/primary</color>
+    <color name="legacy_long_pressed_highlight">#feffffff</color>
+
+    <!-- Forward compatibility for Material-style theme colors -->
+
+    <color name="legacy_primary_dark">#ff000000</color>
+    <color name="legacy_primary">#ffe6e6e6</color>
+    <color name="legacy_primary_light">#ffffffff</color>
+    <color name="legacy_control_activated">#ff90df25</color>
+    <color name="legacy_control_normal">#99ffffff</color>
+    <color name="legacy_button_pressed">#fffea50b</color>
+    <color name="legacy_button_normal">#f3dbdbdb</color>
+
+    <color name="legacy_light_primary_dark">@color/legacy_primary_dark</color>
+    <color name="legacy_light_primary">@color/legacy_primary</color>
+    <color name="legacy_light_primary_light">@color/legacy_primary_light</color>
+    <color name="legacy_light_control_activated">@color/legacy_control_activated</color>
+    <color name="legacy_light_control_normal">#99000000</color>
+    <color name="legacy_light_button_pressed">@color/legacy_button_pressed</color>
+    <color name="legacy_light_button_normal">@color/legacy_button_normal</color>
 
 </resources>

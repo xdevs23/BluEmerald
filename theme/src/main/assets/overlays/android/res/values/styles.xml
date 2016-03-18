@@ -92,4 +92,5 @@
     <style name="Theme.DeviceDefault.Wallpaper" parent="@android:style/Theme.Material.Wallpaper" />
 
     <style name="Theme.DeviceDefault.Wallpaper.NoTitleBar" parent="@android:style/Theme.Material.Wallpaper.NoTitleBar" />
+
 </resources>

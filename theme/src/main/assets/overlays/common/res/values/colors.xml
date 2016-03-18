@@ -15,8 +15,13 @@
     <color name="dark_bg_accent_darker">#121212</color>
     <color name="dark_bg_special">#ff303033</color>
 
-    <color name="ripple_color_dark">#A01e88e5</color>
-    <color name="ripple_color_light">#A01565c0</color>
+    <color name="light_bg_accent">#fffdfdfd</color>
+    <color name="light_bg_accent_lighter">#fffefefe</color>
+    <color name="light_bg_accent_darker">#fffafafa</color>
+    <color name="light_bg_special">#fff0f0f0</color>
+
+    <color name="ripple_color_dark">@*common:color/primary_darker</color>
+    <color name="ripple_color_light">@*common:color/primary</color>
 
     <color name="accent">@*common:color/blue_600</color>
 
@@ -27,5 +32,8 @@
     <color name="_primary_text_black">#fe000000</color>
     <color name="_secondary_text_white">#dbfbfbfb</color>
     <color name="_secondary_text_black">#db020202</color>
+
+    <color name="divider_color_dark">#72f0f0f0</color>
+    <color name="divider_color_light">#720a0a0a</color>
 
 </resources>
