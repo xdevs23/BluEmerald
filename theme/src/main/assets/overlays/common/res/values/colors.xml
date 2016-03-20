@@ -20,6 +20,8 @@
     <color name="light_bg_accent_darker">#fffafafa</color>
     <color name="light_bg_special">#fff0f0f0</color>
 
+    <color name="darknight_bg">#0f1920</color>
+
     <color name="ripple_color_dark">@*common:color/primary_darker</color>
     <color name="ripple_color_light">@*common:color/primary</color>
 

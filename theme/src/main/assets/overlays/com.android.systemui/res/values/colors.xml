@@ -9,7 +9,7 @@
     <color name="system_primary_color">#ff14191f</color>
 
     <!-- Quick settings header background -->
-    <color name="system_secondary_color">#ff0f1920</color>
+    <color name="system_secondary_color">@*common:color/darknight_bg</color>
 
     <!--- Accent color -->
     <color name="system_accent_color">@*common:color/accent</color>
