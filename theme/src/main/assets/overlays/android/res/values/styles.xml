@@ -45,6 +45,10 @@
 
     <style name="Theme.DeviceDefault.Light.NoActionBar.Fullscreen" parent="@android:style/Theme.Material.NoActionBar.Fullscreen" />
 
+    <style name="Theme.DeviceDefault.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge" />
+
+    <style name="Theme.DeviceDefault.DialogWhenLarge.NoActionBar" parent="@android:style/Theme.Material.DialogWhenLarge.NoActionBar" />
+
     <style name="Theme.DeviceDefault.Light.DarkActionBar" parent="@android:style/Theme.Material">
         <item name="android:popupTheme">@android:style/ThemeOverlay.Material.Dark</item>
     </style>
@@ -92,5 +96,7 @@
     <style name="Theme.DeviceDefault.Wallpaper" parent="@android:style/Theme.Material.Wallpaper" />
 
     <style name="Theme.DeviceDefault.Wallpaper.NoTitleBar" parent="@android:style/Theme.Material.Wallpaper.NoTitleBar" />
+
+    <style name="Theme.DeviceDefault.Panel" parent="@android:style/Theme.Material.Panel" />
 
 </resources>

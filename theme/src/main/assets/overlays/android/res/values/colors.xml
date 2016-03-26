@@ -108,6 +108,8 @@
     <color name="link_text_material_dark">@*common:color/primary</color>
     <color name="link_text_material_light">@*common:color/primary_darker</color>
 
+    <color name="chooser_service_row_background_color">@*common:color/dark_bg_accent</color>
+
     <!-- Text & foreground colors -->
 
     <color name="primary_text_default_material_light">@*common:color/_primary_text_black</color>
