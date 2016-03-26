@@ -12,8 +12,6 @@ function goodbye() {
   echo "Congratz! Seems that the configuration process was successful."
 }
 
-welcome
-
 if [ "$1" == "--clearPw" ]; then
   export ENV_BLUEMERALD_KEYPWD=""
   export ENV_BLUEMERALD_STOREPWD=""
@@ -28,6 +26,7 @@ if [ "$1" == "--gpw" ]; then
 fi
 
 if [ -z $ENV_BLUEMERALD_KEYPWD ]; then
+  welcome
   echo "First of all the keystore needs to be configured."
   echo -en "\nKeystore password: "
   read -s -p "" THE_STOREPWD
@@ -36,8 +35,7 @@ if [ -z $ENV_BLUEMERALD_KEYPWD ]; then
   export ENV_BLUEMERALD_KEYPWD="$THE_KEYPWD"
   export ENV_BLUEMERALD_STOREPWD="$THE_STOREPWD"
   echo -en "\n"
+  goodbye
 fi
 
 echo -en "\n"
-
-goodbye
