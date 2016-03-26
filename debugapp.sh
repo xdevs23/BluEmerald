@@ -31,7 +31,9 @@ else
   adb shell pm install -rdtf /sdcard/BECustom.apk
   echo "Applying default theme..."
   adb shell tm apply system
+  sleep 2
   echo "Applying theme..."
   adb shell tm apply io.xdevs23.theme.bluemerald.cm
+  sleep 20
   echo "Done!"
 fi

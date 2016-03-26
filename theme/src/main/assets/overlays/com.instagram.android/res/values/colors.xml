@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="action_bar_top_highlight">@*common:color/blue_700</color>
+    <color name="colorPrimary">@*common:color/primary_darker</color>
+    <color name="colorPrimaryDark">@*common:color/blue_900</color>
+    <color name="blue_medium">@*common:color/primary_darker</color>
+    <color name="action_bar_top_highlight">@*common:color/primary_dark</color>
     <color name="status_bar_blue_background">@*common:color/blue_900</color>
+    <color name="blue_3">@*common:color/blue_500</color>
+    <color name="grey_3">@*common:color/grey_500</color>
+    <color name="grey_7">@*common:color/dark_bg_accent</color>
+    <color name="grey_9">@*common:color/dark_bg_accent_darker</color>
     <color name="error_state">#ffb30f0f</color>
 </resources>
