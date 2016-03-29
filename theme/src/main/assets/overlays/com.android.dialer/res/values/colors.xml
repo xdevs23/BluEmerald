@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+    <color name="dialtacts_primary_text_color">@*common:color/_primary_text_white</color>
+    <color name="dialtacts_secondary_text_color">@*common:color/_secondary_text_white</color>
+
+    <color name="dialer_red_highlight_color">#ff1744</color>
+    <color name="dialer_green_highlight_color">#00c853</color>
+    <color name="dialer_blue_highlight_color">#00a8ff</color>
+
+    <color name="setting_background_color">@*common:color/dark_bg_accent</color>
+    <color name="setting_button_color">#777777</color>
+
+    <color name="item_selected">#660099cc</color>
+
+    <color name="background_dialer_white">@*common:color/dark_bg_accent</color>
+    <color name="background_dialer_light">@*common:color/dark_bg_accent</color>
+    <color name="background_dialer_results">@*common:color/dark_bg_accent_lighter</color>
+    <color name="background_dialer_list_items">@color/background_dialer_light</color>
+    <color name="background_dialer_details_list_items">@color/background_dialer_results</color>
+
+    <color name="favorite_contacts_separator_color">#48d0d0d0</color>
+
+    <color name="searchbox_icon_tint">#bfbfbf</color>
+
+    <color name="contact_tile_name_color">#ffffff</color>
+
+    <color name="contact_list_name_text_color">@color/dialtacts_primary_text_color</color>
+
+    <color name="call_log_missed_call_highlight_color">@color/dialer_red_highlight_color</color>
+    <color name="call_log_voicemail_highlight_color">#33b5e5</color>
+
+    <!-- Tint of the recent card phone icon -->
+    <color name="recent_call_log_item_phone_icon_tint">#000000</color>
+
+    <color name="call_log_extras_text_color">#0277bd</color>
+
+    <color name="voicemail_playback_seek_bar_yet_to_play">@*common:color/dark_semi_more_transparent</color>
+    <color name="voicemail_playback_seek_bar_already_played">@*common:color/accent</color>
+
+    <!-- Undo dialog color -->
+    <color name="undo_dialogue_text_color">#4d4d4d</color>
+
+    <color name="empty_list_text_color">#b2b2b2</color>
+
+    <color name="remove_text_color">#ffffff</color>
+
+    <color name="remove_highlighted_text_color">#ff2f3c</color>
+
+    <color name="contacts_grid_bottom_border_color">#16000000</color>
+
+    <color name="call_log_expanded_background_color">#ffffff</color>
+
+    <color name="call_log_action_text">@*common:color/accent</color>
+
+    <color name="missed_call">#ff2e58</color>
+
+    <color name="blacklisted_call">#fe000000</color>
+
+    <color name="answered_incoming_call">@color/dialer_blue_highlight_color</color>
+
+    <color name="answered_outgoing_call">@color/dialer_green_highlight_color</color>
+
+    <color name="actionbar_icon_color">#ffffff</color>
+
+    <color name="dialer_dialpad_touch_tint">#330288d1</color>
+
+    <color name="floating_action_button_touch_tint">#80ffffff</color>
+
+    <color name="nofavorite_text_color">@*common:color/_secondary_text_black</color>
+
+    <color name="call_stats_incoming">#33b5e5</color>
+    <color name="call_stats_outgoing">#99cc00</color>
+    <color name="call_stats_missed">#eb1313</color>
+    <color name="call_stats_blacklist">#ebaf0d</color>
+    <color name="call_stats_bar_background">#88888888</color>
+
+    <!-- Color for call log blacklist item -->
+    <color name="call_log_action_block_red">#F44336</color>
+    <color name="call_log_action_block_gray">#616161</color>
+
+</resources>

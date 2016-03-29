@@ -61,7 +61,7 @@
 
     <color name="accessibility_focus_highlight">#bf39b500</color>
 
-    <color name="system_notification_accent_color">#fe607d8b</color>
+    <color name="system_notification_accent_color">@*common:color/blue_500</color>
     <color name="battery_saver_mode_color">#fff4511e</color>
 
 
@@ -69,7 +69,28 @@
 
 
     <color name="notification_mtrl_big_picture_bg">#cceeeeee</color>
-
+    <color name="resolver_list_bg">@*common:color/dark_bg_accent</color> <!-- Chooser -->
+    <color name="edit_side_paste_window_text_color">@android:color/black</color>
+    <color name="edit_paste_window_text_color">@android:color/black</color>
+    <color name="edit_action_popup_text_color">@android:color/black</color>
+    <color name="web_view_dropdown_text_color">@*common:color/dark_bg_accent</color>
+    <color name="web_view_dropdown_background_color">@*common:color/_primary_text_white</color>
+    <color name="perms_costs_money_text_color">@*common:color/deep_orange_600</color>
+    <color name="loading_view_text_color">#64fefefe</color>
+    <color name="loading_view_text_shadow_color">#ff020202</color>
+    <color name="notification_action_tombstone_text_color">#aaaaaa</color>
+    <color name="character_picker_button_text_color">#fefefefe</color>
+    <color name="activity_list_divider_color">@*common:color/primary</color>
+    <color name="dialog_divider_color">@*common:color/primary</color>
+    <color name="typing_filter_text_color">#a0ffffff</color>
+    <color name="typing_filter_background_color">#bb000000</color>
+    <color name="status_bar_latest_event_content_bg_color">#fffe01fe</color>
+    <color name="media_controller_background_color">#cc000000</color>
+    <color name="immersive_cling_bg_color">#ff009688</color>
+    <color name="immersive_cling_text_color">@*common:color/_primary_text_white</color>
+    <color name="immersive_cling_button_text_color">@android:color/white</color>
+    <color name="app_permission_icon_tint">@android:color/white</color>
+    <color name="notification_mtrl_action_textcolor">@*common:color/_primary_text_white</color>
 
     <!-- colors_material.xml -->
 
@@ -109,7 +130,6 @@
     <color name="link_text_material_light">@*common:color/primary_darker</color>
 
     <color name="chooser_service_row_background_color">@*common:color/dark_bg_accent</color>
-    <color name="resolver_list_bg">@*common:color/dark_bg_accent</color>
 
     <!-- Text & foreground colors -->
 

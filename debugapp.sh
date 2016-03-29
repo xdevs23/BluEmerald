@@ -35,5 +35,5 @@ else
   echo "Applying theme..."
   adb shell tm apply io.xdevs23.theme.bluemerald.cm
   sleep 20
-  echo "Done!"
+  echo "Done - $(date)"
 fi
