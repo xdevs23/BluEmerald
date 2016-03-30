@@ -2,9 +2,6 @@
 
 <resources>
 
-    <!-- Don't translate strings with 'translatable="false"' -->
-    <string name="app_bg_name">Cornowser (Background)</string>
-
     <!-- General stuff -->
 
     <string name="answer_cancel">Cancel</string>

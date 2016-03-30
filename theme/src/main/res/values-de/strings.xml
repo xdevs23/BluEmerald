@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_bg_name">Cornowser (Hintergrund)</string>
-
     <string name="answer_cancel">Abbrechen</string>
     <string name="answer_ok">OK</string>
 

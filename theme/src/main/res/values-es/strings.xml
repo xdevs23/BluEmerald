@@ -2,8 +2,6 @@
 
 <resources>
 
-    <string name="app_bg_name">Cornowser (fondo)</string>
-
     <!-- General stuff -->
 
     <string name="answer_cancel">Cancelar</string>
