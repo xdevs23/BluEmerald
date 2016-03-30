@@ -1,5 +1,6 @@
 package io.xdevs23.theme.bluemerald.cm.updater;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -10,6 +11,8 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.Toolbar;
@@ -39,6 +42,8 @@ import io.xdevs23.theme.bluemerald.cm.R;
 
 @SuppressWarnings("unused")
 public class UpdateActivity extends XquidCompatActivity {
+
+    public static final int PERMISSION_REQUEST_CODE = 1;
 
     public static ProgressView updateBar;
     public static TextView     updateStatus;
@@ -116,6 +121,30 @@ public class UpdateActivity extends XquidCompatActivity {
         NONE
     }
 
+    /**
+     * Permission check for Marshmallow
+     */
+    public void checkMallowPermissions() {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M &&
+                ContextCompat.checkSelfPermission(
+                        getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE
+                ) != PackageManager.PERMISSION_GRANTED) {
+
+            Toast.makeText(getApplicationContext(),
+                    getString(R.string.permission_hint_write_storage), Toast.LENGTH_LONG).show();
+
+
+            if(!ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE) ||
+
+                    checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) !=
+                            PackageManager.PERMISSION_GRANTED)
+
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                        PERMISSION_REQUEST_CODE);
+        }
+    }
 
     private static void startNRUpdateInstallation() {
 		File newUpdate   = new File(updatedApk);
