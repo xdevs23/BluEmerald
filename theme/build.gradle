@@ -1,5 +1,13 @@
 apply plugin: 'com.android.application'
 
+repositories {
+
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion '24.0.0 rc2'
@@ -42,9 +50,23 @@ android {
             zipAlignEnabled true
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
+
+    // Apache Commons
+    compile 'org.apache.commons:commons-io:+'
+
+    // AppCompat
+    compile 'com.android.support:appcompat-v7:23.2.1'
+
+    // Material library
+    compile 'com.github.rey5137:material:1.2.2.1-SNAPSHOT'
+
 }
