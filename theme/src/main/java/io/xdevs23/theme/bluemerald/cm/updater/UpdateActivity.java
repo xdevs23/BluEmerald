@@ -3,6 +3,8 @@ package io.xdevs23.theme.bluemerald.cm.updater;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -29,6 +31,7 @@ import org.xdevs23.android.app.XquidCompatActivity;
 import org.xdevs23.config.AppConfig;
 import org.xdevs23.config.ConfigUtils;
 import org.xdevs23.debugutils.Logging;
+import org.xdevs23.debugutils.StackTraceParser;
 import org.xdevs23.net.DownloadUtils;
 import org.xdevs23.root.utils.RootController;
 import org.xdevs23.ui.dialog.MessageDialog;
@@ -37,6 +40,7 @@ import org.xdevs23.ui.utils.BarColors;
 import org.xdevs23.ui.widget.EasyListView4;
 
 import java.io.File;
+import java.util.Calendar;
 
 import io.xdevs23.theme.bluemerald.cm.R;
 
@@ -149,7 +153,7 @@ public class UpdateActivity extends XquidCompatActivity {
     private static void startNRUpdateInstallation() {
 		File newUpdate   = new File(updatedApk);
 		
-		File newUpdDir   = new File(updatedApk.replace("CBUpdate.apk", ""));
+		File newUpdDir   = new File(updatedApk.replace("BEUpdate.apk", ""));
 		
 		boolean successCRND = newUpdDir.mkdirs();
 
@@ -227,7 +231,7 @@ public class UpdateActivity extends XquidCompatActivity {
 	}
 
     protected void initVars() {
-        updatedApk = (Environment.getExternalStorageDirectory() + "/Cornowser/CBUpdate.apk")
+        updatedApk = (Environment.getExternalStorageDirectory() + "/xdupdates/BEUpdate.apk")
                 .replace("//", "/");
 
         updateBar = (ProgressView) findViewById(R.id.updateProgressBar);
@@ -326,9 +330,28 @@ public class UpdateActivity extends XquidCompatActivity {
 
     @SuppressLint("SetJavaScriptEnabled")
     protected void init() {
+        checkMallowPermissions();
+        String stu = "startUpdate";
+        if(getIntent().getBooleanExtra(stu, false))
+            startOverallInstallation(UpdaterStorage.URL_APK);
         if(!webloaded) {
             initVars();
             initViews();
+
+            try {
+                Context context = getApplicationContext();
+                Intent intent = new Intent(context, CheckUpdateReceiver.class);
+                intent.setAction("packagename.ACTION");
+                PendingIntent pendingIntent = PendingIntent.getBroadcast(context,
+                        0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTimeInMillis(System.currentTimeMillis());
+                AlarmManager alarm = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+                alarm.cancel(pendingIntent);
+                alarm.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
+            } catch(Exception ex) {
+                StackTraceParser.logStackTrace(ex);
+            }
 
             updaterButton.setVisibility(View.INVISIBLE);
 
@@ -377,9 +400,6 @@ public class UpdateActivity extends XquidCompatActivity {
 
         try {
             BarColors.enableBarColoring(getWindow(), R.color.indigo_700);
-            assert getSupportActionBar() != null;
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setDisplayShowHomeEnabled(true);
         } catch(Exception ex) {/* */}
 
 

@@ -72,6 +72,9 @@
         Version %s ist verfügbar!\n
         Jetzt updaten?
     </string>
+    <string name="update_available_click_to_install">
+        Hier tippen für sofortige Installation
+    </string>
 
     <string name="updater_title">
         Updater

@@ -22,17 +22,25 @@
         android:icon="@mipmap/m_app_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/CoreMTRLTheme"
+        android:uiOptions="none">
 
         <activity
-            android:name=".updater.UpdateActivity"
-            android:launchMode="singleTask">
+            android:name="io.xdevs23.theme.bluemerald.cm.updater.UpdateActivity"
+            android:launchMode="singleTask"
+            android:label="@string/updater_starter_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name="io.xdevs23.theme.bluemerald.cm.updater.CheckUpdateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
     </application>
 

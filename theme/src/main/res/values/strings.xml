@@ -9,6 +9,8 @@
     <string name="theme_author" translatable="false">xdevs23</string>
     <string name="theme_email" translatable="false">xdevs23@outlook.com</string>
 
+    <string name="updater_starter_name" translatable="false">BluEmerald Updater</string>
+
     <!-- General stuff -->
 
     <string name="answer_cancel">Cancel</string>

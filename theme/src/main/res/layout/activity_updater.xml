@@ -59,20 +59,6 @@
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/blue_600" />
 
-            <com.rey.material.widget.Button
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:id="@+id/updaterTlCreditsBtn"
-                android:layout_toStartOf="@+id/UpdaterAppName"
-                android:layout_toLeftOf="@+id/UpdaterAppName"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:layout_marginTop="16dp"
-                android:text="@string/tl"
-                android:textColor="@color/white"
-                style="@style/Button_ColorStyle_Flatted"
-                app:rd_style="@style/Ripple_Light" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -174,6 +160,20 @@
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:text="@string/updater_awaiting_loading" />
+
+            <com.rey.material.widget.Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/updaterTlCreditsBtn"
+                android:layout_below="@+id/updaterChangelog"
+                android:layout_alignLeft="@+id/updaterChangelogTitle"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/tl"
+                android:textColor="@color/white"
+                style="@style/Button_ColorStyle_Flatted"
+                app:rd_style="@style/Ripple_Light" />
 
         </RelativeLayout>
 
