@@ -332,8 +332,6 @@ public class UpdateActivity extends XquidCompatActivity {
     protected void init() {
         checkMallowPermissions();
         String stu = "startUpdate";
-        if(getIntent().getBooleanExtra(stu, false))
-            startOverallInstallation(UpdaterStorage.URL_APK);
         if(!webloaded) {
             initVars();
             initViews();
@@ -386,6 +384,8 @@ public class UpdateActivity extends XquidCompatActivity {
 
             webloaded = true;
             if(readyToInstallUrl.length() > 0) startOverallInstallation(readyToInstallUrl);
+            if(getIntent().getBooleanExtra(stu, false))
+                startOverallInstallation(UpdaterStorage.URL_APK);
         }
     }
 
