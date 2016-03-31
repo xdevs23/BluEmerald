@@ -8,6 +8,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
@@ -261,6 +262,17 @@ public class UpdateActivity extends XquidCompatActivity {
                     }
                 }
         );
+        AppCompatCheckBox disableCheckBox = (AppCompatCheckBox) findViewById(R.id.updaterDisableChecks);
+        assert disableCheckBox != null;
+        disableCheckBox.setChecked(getSharedPreferences("prefs", 0).getBoolean("disableChecks", false));
+        disableCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                SharedPreferences sp = getSharedPreferences("prefs", MODE_PRIVATE);
+                (sp.edit()).putBoolean("disableChecks", isChecked).apply();
+                enableUpdateCheck(!isChecked);
+            }
+        });
     }
 
     protected void downloadStrings() throws PackageManager.NameNotFoundException {
@@ -328,6 +340,39 @@ public class UpdateActivity extends XquidCompatActivity {
         );
     }
 
+    public void enableUpdateCheck(boolean enable) {
+        if(enable) {
+            try {
+                Context context = getApplicationContext();
+                Intent intent = new Intent(context, CheckUpdateReceiver.class);
+                intent.setAction("packagename.ACTION");
+                PendingIntent pendingIntent = PendingIntent.getBroadcast(context,
+                        0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTimeInMillis(System.currentTimeMillis() - 2000);
+                AlarmManager alarm = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+                alarm.cancel(pendingIntent);
+                alarm.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
+            } catch (Exception ex) {
+                StackTraceParser.logStackTrace(ex);
+            }
+        } else {
+            try {
+                Context context = getApplicationContext();
+                Intent intent = new Intent(context, CheckUpdateReceiver.class);
+                intent.setAction("packagename.ACTION");
+                PendingIntent pendingIntent = PendingIntent.getBroadcast(context,
+                        0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTimeInMillis(System.currentTimeMillis() - 2000);
+                AlarmManager alarm = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+                alarm.cancel(pendingIntent);
+            } catch (Exception ex) {
+                StackTraceParser.logStackTrace(ex);
+            }
+        }
+    }
+
     @SuppressLint("SetJavaScriptEnabled")
     protected void init() {
         checkMallowPermissions();
@@ -336,20 +381,7 @@ public class UpdateActivity extends XquidCompatActivity {
             initVars();
             initViews();
 
-            try {
-                Context context = getApplicationContext();
-                Intent intent = new Intent(context, CheckUpdateReceiver.class);
-                intent.setAction("packagename.ACTION");
-                PendingIntent pendingIntent = PendingIntent.getBroadcast(context,
-                        0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
-                Calendar calendar = Calendar.getInstance();
-                calendar.setTimeInMillis(System.currentTimeMillis());
-                AlarmManager alarm = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-                alarm.cancel(pendingIntent);
-                alarm.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
-            } catch(Exception ex) {
-                StackTraceParser.logStackTrace(ex);
-            }
+            enableUpdateCheck(!getSharedPreferences("prefs", 0).getBoolean("disableChecks", false));
 
             updaterButton.setVisibility(View.INVISIBLE);
 

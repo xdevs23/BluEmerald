@@ -61,6 +61,9 @@
     <string name="updater_mask_changelog_inner" formatted="false">
         Version code %s, released on %s/%s/%s\n\n%s
     </string>
+    <string name="updater_disable_checks">
+        Disable automatic checks
+    </string>
 
     <string name="update_available_title">
         Update available

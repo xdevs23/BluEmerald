@@ -24,6 +24,8 @@
 
     <color name="ripple_color_dark">@*common:color/primary_darker</color>
     <color name="ripple_color_light">@*common:color/primary</color>
+    <color name="ripple_color_dark_t">#a01976d2</color>
+    <color name="ripple_color_light_t">#a01e88e5</color>
 
     <color name="accent">@*common:color/blue_600</color>
 

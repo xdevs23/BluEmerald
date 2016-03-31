@@ -43,7 +43,8 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -96,16 +97,6 @@
                 style="@style/Button_ColorStyle_Flatted"
                 app:rd_style="@style/Ripple_Light" />
 
-            <android.support.v7.widget.AppCompatCheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/updaterEnableRootChk"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignTop="@id/updaterUpdateAppButton"
-                android:gravity="end"
-                android:text="@string/root_enable_root_access" />
-
             <com.rey.material.widget.ProgressView
                 android:id="@+id/updateProgressBar"
                 android:layout_width="wrap_content"
@@ -134,11 +125,37 @@
                 android:textSize="12sp"
                 android:textColor="@color/black" />
 
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/updaterDisableChecks"
+                android:layout_below="@id/updateProgressBar"
+                android:layout_alignLeft="@id/updaterUpdateAppButton"
+                android:layout_alignStart="@id/updaterUpdateAppButton"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical"
+                android:text="@string/updater_disable_checks"
+                android:fontFamily="sans-serif-condensed" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/updaterEnableRootChk"
+                android:layout_below="@id/updaterDisableChecks"
+                android:layout_alignLeft="@id/updaterUpdateAppButton"
+                android:layout_alignStart="@id/updaterUpdateAppButton"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical"
+                android:text="@string/root_enable_root_access"
+                android:fontFamily="sans-serif-condensed" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/updaterChangelogTitle"
-                android:layout_below="@id/updateProgressBar"
+                android:layout_below="@id/updaterEnableRootChk"
                 android:layout_marginTop="16dp"
                 android:layout_alignLeft="@id/updaterNewAppVersion"
                 android:layout_alignStart="@id/updaterNewAppVersion"
@@ -160,6 +177,7 @@
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:text="@string/updater_awaiting_loading" />
+
 
             <com.rey.material.widget.Button
                 android:layout_width="wrap_content"

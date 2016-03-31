@@ -17,6 +17,7 @@ import io.xdevs23.theme.bluemerald.cm.R;
 public class CheckUpdateReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
+        if(context.getSharedPreferences("prefs", 0).getBoolean("disableChecks", false)) return;
         try {
             UpdateActivity.UpdateType updateType = UpdateActivity.UpdateType.NONE;
             String latestVersionName = "";
@@ -56,13 +57,13 @@ public class CheckUpdateReceiver extends BroadcastReceiver {
                         .setContentIntent(contentIntent)
                         .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.m_app_icon))
                         .setSmallIcon(R.mipmap.m_app_icon)
-                        .setContentTitle(context.getString(R.string.update_available_title))
+                        .setContentTitle(context.getString(R.string.update_available_title) + ": " + latestVersionName)
                         .setContentText(context.getString(R.string.update_available_click_to_install))
                         .setAutoCancel(true)
                         ;
 
 
-                Notification notif = b.getNotification();
+                Notification notif = b.build();
 
                 notif.defaults |= Notification.DEFAULT_ALL;
                 nm.notify(0, notif);

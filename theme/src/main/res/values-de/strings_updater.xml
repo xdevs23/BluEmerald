@@ -64,6 +64,9 @@
     <string name="updater_mask_changelog_inner" formatted="false">
         Version-Code %s, veröffentlicht am %s.%s.%s\n\n%s
     </string>
+    <string name="updater_disable_checks">
+        Deaktiviere automatische Update-Suche
+    </string>
 
     <string name="update_available_title">
         Update verfügbar

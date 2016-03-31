@@ -1,9 +1,2 @@
-
- - Add Dialer [com.android.dialer]
- - Add Launcher (Trebuchet) [com.android.launcher3]
- - Improve Android-Framework [android]
- - Improve SystemUI [com.android.systemui]
- - Try to fix CM12/12.1 issues
- - Introduce Updater (You are notified after boot and every day if a new update is available)
-
-
+ - Add Inbox by Gmail (not completed yet) [com.google.android.apps.inbox]
+ - Improve Updater and add disable update checks option
