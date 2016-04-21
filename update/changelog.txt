@@ -1,1 +1,2 @@
  - Remove lollipop+ check and improve updating using root
+ - Update AppCompat libraries
