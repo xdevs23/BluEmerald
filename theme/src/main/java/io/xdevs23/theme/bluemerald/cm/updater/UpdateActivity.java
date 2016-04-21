@@ -198,8 +198,7 @@ public class UpdateActivity extends XquidCompatActivity {
             String endR = "";
             Logging.logd("Update path is " + updatedApk);
 			if(enableRoot) endR = RootController.runCommand(
-                    "su -c \"am force-stop io.xdevs23.cornowser.browser\" && " +
-                            "su -c \"pm install -r " + updatedApk + "\" && " +
+                            "su -c \"pm install -rdtf " + updatedApk + "\" && " +
                             "su -c \"am start -n io.xdevs23.theme.bluemerald.cm/.updater.UpdateActivity\"" +
                             "&& exit");
 			else startNRUpdateInstallation();
@@ -443,35 +442,28 @@ public class UpdateActivity extends XquidCompatActivity {
                 (AppCompatCheckBox) findViewById(R.id.updaterEnableRootChk);
         assert rootCheckBox != null;
 		if(RootController.isSuInstalled() && RootController.isBusyboxInstalled()) {
+            AlertDialog.Builder adB = new AlertDialog.Builder(staticContext);
+            adB.setTitle(getString(R.string.rootutils_root_detect_title))
+                    .setMessage(getString(R.string.rootutils_root_detect_message))
+                    .setPositiveButton(getString(R.string.answer_yes), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface d, int id) {
 
-            if(Build.VERSION.SDK_INT <= Build.VERSION_CODES.KITKAT) {
-                AlertDialog.Builder adB = new AlertDialog.Builder(staticContext);
-                adB.setTitle(getString(R.string.rootutils_root_detect_title))
-                        .setMessage(getString(R.string.rootutils_root_detect_message))
-                        .setPositiveButton(getString(R.string.answer_yes), new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface d, int id) {
-
-                                if (RootController.requestRoot()) {
-                                    enableRoot = true;
-                                    rootCheckBox.setChecked(true);
-                                    d.dismiss();
-                                } else {
-                                    MessageDialog.showDialog(
-                                            getString(R.string.rootutils_root_access_failed_title),
-                                            getString(R.string.rootutils_root_access_failed), staticContext);
-                                    rootCheckBox.setChecked(false);
-                                    d.dismiss();
-                                }
+                            if (RootController.requestRoot()) {
+                                enableRoot = true;
+                                rootCheckBox.setChecked(true);
+                                d.dismiss();
+                            } else {
+                                MessageDialog.showDialog(
+                                        getString(R.string.rootutils_root_access_failed_title),
+                                        getString(R.string.rootutils_root_access_failed), staticContext);
+                                rootCheckBox.setChecked(false);
+                                d.dismiss();
                             }
-                        })
-                        .setNegativeButton(getString(R.string.answer_no), new DismissDialogButton());
-                adB.create().show();
-            } else {
-                Toast.makeText(getApplicationContext(), getString(R.string.root_toast_info_lollihigh),
-                        Toast.LENGTH_LONG).show();
-            }
-
+                        }
+                    })
+                    .setNegativeButton(getString(R.string.answer_no), new DismissDialogButton());
+            adB.create().show();
         } else rootCheckBox.setVisibility(View.INVISIBLE);
 
         init();
