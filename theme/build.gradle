@@ -15,8 +15,8 @@ android {
         applicationId "io.xdevs23.theme.bluemerald.cm"
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 2016033100
-        versionName "1.0.5"
+        versionCode 2016042100
+        versionName "1.0.6"
     }
 
     signingConfigs {
@@ -64,7 +64,7 @@ dependencies {
     compile 'org.apache.commons:commons-io:+'
 
     // AppCompat
-    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:appcompat-v7:23.3.0'
 
     // Material library
     compile 'com.github.rey5137:material:1.2.2.1-SNAPSHOT'
