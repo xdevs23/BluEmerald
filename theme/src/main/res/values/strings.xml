@@ -3,13 +3,13 @@
 <resources>
 
     <!-- Don't translate strings with 'translatable="false"' -->
-    <string name="app_name" translatable="false">BluEmerald Theme</string>
+    <string name="app_name" translatable="false">XOS Theme Updater</string>
 
-    <string name="theme_name" translatable="false">BluEmerald</string>
+    <string name="theme_name" translatable="false">XOS Cutting Edge Flat Halo (Dark)</string>
     <string name="theme_author" translatable="false">xdevs23</string>
     <string name="theme_email" translatable="false">xdevs23@outlook.com</string>
 
-    <string name="updater_starter_name" translatable="false">BluEmerald Updater</string>
+    <string name="updater_starter_name" translatable="false">XOS Theme Updater</string>
 
     <!-- General stuff -->
 
