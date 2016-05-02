@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme" parent="@android:style/Theme.Material">
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:colorPrimary">@color/calculator_accent_color</item>
+        <item name="android:statusBarColor">@color/pad_numeric_background_color</item>
+    </style>
+    <style name="Theme.Calculator" parent="@style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:layoutDirection">ltr</item>
+    </style>
+    <style name="Theme.Licenses" parent="@style/Theme"/>
+    <style name="DisplayTextStyle" parent="@android:style/Widget.Material.TextView">
+        <item name="android:gravity">end|bottom|center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+</resources>

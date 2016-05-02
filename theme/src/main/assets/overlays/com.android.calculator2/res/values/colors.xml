@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calculator_accent_color">@*common:color/blue_600</color>
+    <color name="calculator_error_color">@*common:color/red_600</color>
+    <color name="display_background_color">@*common:color/darknight_bg</color>
+    <color name="display_formula_text_color">@*common:color/blue_600</color>
+    <color name="display_result_text_color">@*common:color/blue_600</color>
+    <color name="pad_numeric_background_color">@*common:color/darknight_bg_dark</color>
+    <color name="pad_operator_background_color">@*common:color/blue_600</color>
+    <color name="pad_advanced_background_color">@*common:color/blue_700</color>
+    <color name="pad_button_text_color">#ffffffff</color>
+    <color name="pad_button_advanced_text_color">#91ffffff</color>
+    <color name="pad_button_ripple_color">#33ffffff</color>
+    <color name="pad_button_advanced_ripple_color">#1a000000</color>
+</resources>
+
