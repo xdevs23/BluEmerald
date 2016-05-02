@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fffafafa</color>
+    <color name="black">@*common:color/darknight_bg</color>
+    <color name="primary">@*common:color/primary_dark</color>
+    <color name="primary_dark">@*common:color/primary_darker</color>
+    <color name="accent">@*common:color/primary_darker</color>
+    <color name="floating_action_button_touch_tint">@*common:color/primary_dark</color>
+    <color name="tabFaviconBackground">@*common:color/primary_dark</color>
+    <color name="tabFocusHighlight">@*common:color/primary_dark</color>
+    <color name="qcMenuBackground">@*common:color/darknight_bg</color>
+    <color name="qc_normal">@*common:color/primary_dark</color>
+    <color name="qc_selected">@*common:color/primary_darker</color>
+    <color name="qc_sub">@*common:color/primary_darker</color>
+    <color name="qc_tab_nr">@*common:color/primary_darker</color>
+    <color name="navtab_bg">#80606060</color>
+</resources>
