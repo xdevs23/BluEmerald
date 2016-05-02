@@ -7,7 +7,7 @@
     <color name="status_bar_blue_background">@*common:color/blue_900</color>
     <color name="blue_3">@*common:color/blue_500</color>
     <color name="grey_3">@*common:color/grey_500</color>
-    <color name="grey_7">@*common:color/dark_bg_accent</color>
-    <color name="grey_9">@*common:color/dark_bg_accent_darker</color>
+    <color name="grey_7">@*common:color/darknight_bg</color>
+    <color name="grey_9">@*common:color/darknight_bg_dark</color>
     <color name="error_state">#ffb30f0f</color>
 </resources>
