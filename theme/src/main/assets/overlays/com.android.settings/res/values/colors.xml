@@ -19,9 +19,9 @@
 
     <color name="text_color_translucent_white">#b3ffffff</color>
 
-    <color name="dashboard_background_color">@*common:color/dark_bg_accent</color>
-    <color name="dashboard_category_background_color">@*common:color/dark_bg_accent</color>
-    <color name="cardview_light_background">@*common:color/dark_bg_accent_lighter</color>
+    <color name="dashboard_background_color">@*common:color/darknight_bg</color>
+    <color name="dashboard_category_background_color">@*common:color/darknight_bg</color>
+    <color name="cardview_light_background">@*common:color/darknight_bg</color>
 
     <color name="switchbar_text_color">#feffffff</color>
 
