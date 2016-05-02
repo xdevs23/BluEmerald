@@ -37,8 +37,8 @@
 
     <color name="text_color_black">#fefefefe</color>
     <color name="text_color">@*common:color/_primary_text_white</color>
-    <color name="background_color_white">@*common:color/dark_bg_accent</color>
-    <color name="background_color_gray">@*common:color/dark_bg_accent_darker</color>
+    <color name="background_color_white">@*common:color/darknight_bg</color>
+    <color name="background_color_gray">@*common:color/darknight_bg_dark</color>
     <color name="text_color_secondary_text_material_light">#dbfefefe</color>
 
     <color name="switchbar_background_color">@*common:color/blue_700</color>
