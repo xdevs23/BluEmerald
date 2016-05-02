@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- For some reason I can never theme this player with external color references-->
+    <!-- Blue color 800, 900, 900, 800-->
+    <color name="primary">@*common:color/blue_600</color>
+    <color name="primary_dark">@*common:color/blue_700</color>
+    <color name="primary_light">@*common:color/blue_700</color>
+    <color name="header_action_bar_color">@*common:color/blue_600</color>
+
+    <color name="accent">@*common:color/blue_700</color>
+    <color name="background_color">@*common:color/darknight_bg</color>
+    <color name="default_text_color">@*common:color/_primary_text_white</color>
+    <color name="black">@*common:color/darknight_bg</color>
+    <color name="white">#ffe5e5e5</color>
+
+    <color name="page_header_background">#ffe5e5e5</color>
+    <color name="header_shadow_color">#ea212121</color>
+
+    <color name="menu_divider_color">#4ca19d9e</color>
+    <color name="menu_text_color">@*common:color/_primary_text_black</color>
+    <color name="smart_playlist_item_background">#19212121</color>
+    <color name="list_item_background">@*common:color/primary_dark</color>
+    <color name="list_item_header_text_color">@*common:color/primary_dark</color>
+    <color name="list_item_divider_color">#ff212121</color>
+    <color name="list_item_divider_color_light">#34ffffff</color>
+    <color name="grid_list_item_text_color">#b3212121</color>
+    <color name="no_results">#ff212121</color>
+</resources>
+

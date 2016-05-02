@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="eq_holo_bright">@*common:color/blue_500</color>
+    <color name="eq_holo_blue">@*common:color/blue_400</color>
+    <color name="eq_holo_dark">@*common:color/blue_300</color>
+    <color name="eq_red">@*common:color/blue_700</color>
+    <color name="eq_green">@*common:color/blue_800</color>
+    <color name="eq_yellow">@*common:color/blue_900</color>
+    <color name="primary">@*common:color/blue_600</color>
+    <color name="primary_dark">@*common:color/blue_700</color>
+    <color name="accent">@*common:color/blue_600</color>
+    <color name="grid_lines">#64ffffff</color>
+    <color name="highlight">@*common:color/blue_600</color>
+    <color name="lowlight">@*common:color/blue_600</color>
+
+</resources>

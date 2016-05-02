@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="action_bar_style" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:background">@*common:color/blue_600</item>
+    </style>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+        <item name="android:actionBarStyle">@style/action_bar_style</item>
+        <item name="android:colorPrimary">@*common:color/blue_600</item>
+        <item name="android:colorPrimaryDark">@*common:color/blue_700</item>
+        <item name="android:colorAccent">@*common:color/blue_600</item>
+    </style>
+</resources>

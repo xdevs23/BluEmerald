@@ -5,7 +5,7 @@
         <item name="android:elevation">0dip</item>
     </style>
 
-    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Settings">
+    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material">
         <item name="android:colorPrimary">@*common:color/primary_darker</item>
         <item name="android:colorPrimaryDark">@*common:color/primary_dark</item>
         <item name="android:colorAccent">@*common:color/accent</item>

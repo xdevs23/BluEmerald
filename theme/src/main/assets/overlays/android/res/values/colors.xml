@@ -95,9 +95,9 @@
     <!-- colors_material.xml -->
 
 
-    <color name="background_material_dark">@*common:color/dark_bg_accent</color>
+    <color name="background_material_dark">@*common:color/darknight_bg</color>
     <color name="background_material_light">@*common:color/light_bg_accent</color>
-    <color name="background_floating_material_dark">@*common:color/dark_bg_special</color>
+    <color name="background_floating_material_dark">@*common:color/darknight_bg_dark</color>
     <color name="background_floating_material_light">@*common:color/light_bg_accent_lighter</color>
 
     <color name="primary_material_dark">#ff222222</color>
@@ -129,7 +129,7 @@
     <color name="link_text_material_dark">@*common:color/primary</color>
     <color name="link_text_material_light">@*common:color/primary_darker</color>
 
-    <color name="chooser_service_row_background_color">@*common:color/dark_bg_accent</color>
+    <color name="chooser_service_row_background_color">@*common:color/darknight_bg</color>
 
     <!-- Text & foreground colors -->
 
@@ -160,7 +160,7 @@
     <!-- colors_holo.xml -->
 
 
-    <color name="background_holo_dark">@*common:color/dark_bg_accent_darker</color>
+    <color name="background_holo_dark">@*common:color/darknight_bg_dark</color>
     <color name="background_holo_light">@*common:color/light_bg_accent</color>
     <color name="bright_foreground_holo_dark">@color/background_holo_light</color>
     <color name="bright_foreground_holo_light">@color/background_holo_dark</color>
