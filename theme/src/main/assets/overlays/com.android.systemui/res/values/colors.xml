@@ -6,14 +6,13 @@
 
 
     <!-- Quick settings background -->
-    <color name="system_primary_color">#ff14191f</color>
+    <color name="system_primary_color">@*common:color/darknight_bg</color>
 
     <!-- Quick settings header background -->
-    <color name="system_secondary_color">@*common:color/darknight_bg</color>
+    <color name="system_secondary_color">@*common:color/darknight_bg_dark</color>
 
     <!--- Accent color -->
     <color name="system_accent_color">@*common:color/accent</color>
-
 
     <color name="qs_text">#feffffff</color>
     <color name="qs_tile_divider">#08fefefe</color>
@@ -51,13 +50,13 @@
 
 
     <!-- The color of the legacy notification background -->
-    <color name="notification_legacy_background_color">#df1e1e1e</color>
+    <color name="notification_legacy_background_color">#df14191f</color>
 
     <!-- The color of the material notification background -->
-    <color name="notification_material_background_color">#df1e1e1e</color>
-    <color name="notification_material_background_low_priority_color">#df1e1e1e</color>
-    <color name="notification_material_background_media_default_color">#df1e1e1e</color>
-    <color name="notification_material_background_dimmed_color">#d01e1e1e</color>
+    <color name="notification_material_background_color">#df14191f</color>
+    <color name="notification_material_background_low_priority_color">#df14191f</color>
+    <color name="notification_material_background_media_default_color">#df14191f</color>
+    <color name="notification_material_background_dimmed_color">#d014191f</color>
 
     <!-- The color of the ripples on the untinted notifications -->
     <color name="notification_ripple_untinted_color">#24ffffff</color>
