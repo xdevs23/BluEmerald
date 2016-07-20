@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>    
+    
+<color name="key_text_color_lxx_light">#2979FF</color>
+    <color name="key_functional_text_color_lxx_light">#CC2979FF</color>
+    <color name="key_text_inactive_color_lxx_light">#B32979FF</color>
+    <color name="key_hint_letter_color_lxx_light">#B32979FF</color>
+    <color name="language_on_spacebar_text_color_lxx_light">#B22979FF</color>
+    <color name="highlight_color_lxx_light">#2979FF</color>
+    <color name="auto_correct_color_lxx_light">#2979FF</color>
+    <color name="typed_word_color_lxx_light">#D92979FF</color>
+    <color name="suggested_word_color_lxx_light">#B42979FF</color>
+    <color name="gesture_trail_color_lxx_light">#2979FF</color>
+    <color name="sliding_key_input_preview_color_lxx_light">#B32979FF</color>
+    <color name="key_background_lxx_light">#0f1920</color>
+    <color name="key_background_pressed_lxx_light">#b33f4960</color>
+    <color name="suggested_word_background_selected_lxx_light">#262979FF</color>
+    <color name="gesture_floating_preview_color_lxx_light">#E62979FF</color>
+    <color name="emoji_tab_page_indicator_background_lxx_light">#0f1920</color>
+    <color name="key_text_color_lxx_dark">#fefefefe</color>
+    <color name="key_functional_text_color_lxx_dark">@color/key_text_color_lxx_dark</color>
+    <color name="key_text_inactive_color_lxx_dark">#dbf4f4f4</color>
+    <color name="key_hint_letter_color_lxx_dark">@color/key_text_inactive_color_lxx_dark</color>
+    <color name="language_on_spacebar_text_color_lxx_dark">#b4fefefe</color>
+    <color name="highlight_color_lxx_dark">#2196F3</color>
+    <color name="auto_correct_color_lxx_dark">#fefefe</color>
+    <color name="typed_word_color_lxx_dark">#dafdfdfd</color>
+    <color name="suggested_word_color_lxx_dark">#b4fefefe</color>
+    <color name="gesture_trail_color_lxx_dark">#1E88E5</color>
+    <color name="sliding_key_input_preview_color_lxx_dark">#1976D2</color>
+    <color name="key_background_lxx_dark">#121212</color>
+    <color name="key_background_pressed_lxx_dark">#20fdfdfd</color>
+    <color name="suggested_word_background_selected_lxx_dark">#20fdfdfd</color>
+    <color name="gesture_floating_preview_color_lxx_dark">#e621272b</color>
+    <color name="emoji_tab_page_indicator_background_lxx_dark">#121212</color>
+    <color name="notification_accent_color">#121212</color>
+</resources>

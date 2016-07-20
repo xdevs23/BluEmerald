@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>    
+    
+<color name="status_bar_recents_app_label_color">#feffffff</color>
+    <color name="system_primary_color">#ff14191f</color>
+    <color name="system_secondary_color">#0f1920</color>
+    <color name="system_accent_color">#1E88E5</color>
+    <color name="qs_text">#feffffff</color>
+    <color name="qs_tile_divider">#08fefefe</color>
+    <color name="qs_tile_text">#f0ffffff</color>
+    <color name="qs_detail_empty">#242080df</color>
+    <color name="qs_detail_transition">#64ffffff</color>
+    <color name="qs_detail_progress_track">#a01976d2</color>
+    <color name="data_usage_secondary">#99ffffff</color>
+    <color name="data_usage_graph_track">#33ffffff</color>
+    <color name="data_usage_graph_warning">#ffffffff</color>
+    <color name="status_bar_clock_color">#feffffff</color>
+    <color name="keyguard_overflow_content_color">#ff686868</color>
+    <color name="recents_task_bar_default_background_color">#ff040404</color>
+    <color name="recents_task_bar_light_text_color">#feefefef</color>
+    <color name="recents_task_bar_dark_text_color">#d8000000</color>
+    <color name="recents_task_bar_light_dismiss_color">#feefefef</color>
+    <color name="recents_task_bar_dark_dismiss_color">#a0000000</color>
+    <color name="recents_task_bar_highlight_color">#28000000</color>
+    <color name="recents_task_view_lock_to_app_button_background_color">#ff040404</color>
+    <color name="recents_task_view_lock_to_app_button_color">#ffc4c4c4</color>
+    <color name="notification_legacy_background_color">#df1e1e1e</color>
+    <color name="notification_material_background_color">#df1e1e1e</color>
+    <color name="notification_material_background_low_priority_color">#df1e1e1e</color>
+    <color name="notification_material_background_media_default_color">#df1e1e1e</color>
+    <color name="notification_material_background_dimmed_color">#d01e1e1e</color>
+    <color name="notification_ripple_untinted_color">#24ffffff</color>
+    <color name="notification_ripple_color_low_priority">#24ffffff</color>
+    <color name="notification_ripple_tinted_color">#30fefefe</color>
+    <color name="notification_guts_bg_color">@color/system_secondary_color</color>
+    <color name="notification_guts_title_color">#feffffff</color>
+    <color name="notification_guts_text_color">#b4ffffff</color>
+    <color name="notification_guts_btn_color">#feffffff</color>
+    <color name="search_panel_circle_color">#ff000000</color>
+    <color name="search_panel_ripple_color">#fff4f4f4</color>
+    <color name="fake_shadow_start_color">#48000000</color>
+    <color name="fake_shadow_end_color">#03010101</color>
+    <color name="segmented_button_selected">#ffffffff</color>
+    <color name="segmented_button_unselected">#b26eb9f7</color>
+    <color name="volume_panel_divider">#1efefefe</color>
+    <color name="current_user_border_color">@color/system_accent_color</color>
+    <color name="no_recent_apps">#fbe3f2fd</color>
+    <color name="notification_icon_color">#feffffff</color>
+    <color name="navbutton_ripple_color">#feffffff</color>
+    <color name="qs_tile_text_disabled">#fd868686</color>
+    <color name="status_bar_temperature_text_color">#ffffffff</color>
+    <color name="status_bar_temperature_location_text_color">#fbffffff</color>
+    <color name="status_bar_alarm_status_text_color">#72ffffff</color>
+    <color name="status_bar_battery_level_text_color">#fdfefefe</color>
+    <color name="notification_guts_media_bg_color">#fb606060</color>
+</resources>

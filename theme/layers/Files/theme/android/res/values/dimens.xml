@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <dimen name="dialog_padding_material">22.0dip</dimen>
+
+    <dimen name="notification_text_size">14.0sp</dimen>
+    <dimen name="notification_title_text_size">16.0sp</dimen>
+    <dimen name="notification_subtext_size">12.0sp</dimen>
+    <dimen name="notification_top_pad">10.0dip</dimen>
+    <dimen name="notification_top_pad_narrow">4.0dip</dimen>
+    <dimen name="notification_top_pad_large_text">5.0dip</dimen>
+    <dimen name="notification_top_pad_large_text_narrow">-4.0dip</dimen>
+    <dimen name="notification_large_icon_circle_padding">11.0dip</dimen>
+    <dimen name="notification_badge_size">16.0dip</dimen>
+</resources>
