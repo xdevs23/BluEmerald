@@ -38,12 +38,12 @@ if [ -z $ENV_BLUEMERALD_KEYPWD ]; then
   goodbye
 fi
 
-echo -en "\n"
-
-echo "Executing makescripts..."
-
-for script in $(ls makescripts/); do
-  if [ "$script" != "99cleanup.sh" ]; then source makescripts/$script; fi
-done
+#echo -en "\n"
+#
+#echo "Executing makescripts..."
+#
+#for script in $(ls makescripts/); do
+#  if [ "$script" != "99cleanup.sh" ]; then source makescripts/$script; fi
+#done
 
 echo -en "\n"
