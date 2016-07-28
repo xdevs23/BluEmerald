@@ -12,8 +12,8 @@ for theme in $(ls theme/layers/Files/theme/); do
   zip -r theme/src/main/assets/Files/theme/$theme.apk theme/layers/Files/theme/$theme/*
 done
 
-zip -r theme/src/main/assets/Files/theme/theme.zip theme/src/main/assets/Files/theme/*
-rm -rf theme/src/main/assets/Files/theme/*.apk
+zip -r theme/src/main/assets/Files/theme.zip theme/src/main/assets/Files/theme/*
+rm -rf theme/src/main/assets/Files/theme/
 
 
 echo "Layers theme built."

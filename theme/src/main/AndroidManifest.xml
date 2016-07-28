@@ -1,17 +1,9 @@
 <manifest package="io.xdevs23.theme.bluemerald.cm"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
-
     <uses-feature android:required="true" android:name="org.cyanogenmod.theme" />
 
-    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="23" />
+    <uses-sdk />
 
     <meta-data android:name="org.cyanogenmod.theme.name" android:value="@string/theme_name"/>
     <meta-data android:name="org.cyanogenmod.theme.author" android:value="@string/theme_author" />
@@ -20,27 +12,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/m_app_icon"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/CoreMTRLTheme"
-        android:uiOptions="none">
-
-        <activity
-            android:name="io.xdevs23.theme.bluemerald.cm.updater.UpdateActivity"
-            android:launchMode="singleTask"
-            android:label="@string/updater_starter_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <receiver android:name="io.xdevs23.theme.bluemerald.cm.updater.CheckUpdateReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
+        android:label="@string/app_name">
 
     </application>
 
