@@ -1,13 +1,5 @@
 apply plugin: 'com.android.application'
 
-repositories {
-
-    maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots"
-    }
-
-}
-
 android {
     compileSdkVersion 23
     buildToolsVersion '24.0.1'
@@ -15,8 +7,8 @@ android {
         applicationId "io.xdevs23.theme.bluemerald.cm"
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 2016042100
-        versionName "1.0.6"
+        versionCode 2016072800
+        versionName "1.0.7"
     }
 
     signingConfigs {
