@@ -7,7 +7,7 @@ android {
         applicationId "io.xdevs23.theme.bluemerald.cm"
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 2016072800
+        versionCode 1070
         versionName "1.0.7"
     }
 
