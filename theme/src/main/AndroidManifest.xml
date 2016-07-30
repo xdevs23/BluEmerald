@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="io.xdevs23.theme.bluemerald.SubstratumLauncher">
+        <activity android:name=".SubstratumLauncher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>

@@ -1,4 +1,4 @@
-package io.xdevs23.theme.bluemerald;
+package io.xdevs23.theme.bluemerald.cm;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -7,7 +7,14 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
+
+import com.github.javiersantos.piracychecker.PiracyChecker;
+import com.github.javiersantos.piracychecker.PiracyCheckerUtils;
+import com.github.javiersantos.piracychecker.enums.InstallerID;
+import com.github.javiersantos.piracychecker.enums.PiracyCheckerCallback;
+import com.github.javiersantos.piracychecker.enums.PiracyCheckerError;
 
 import io.xdevs23.theme.bluemerald.cm.R;
 
@@ -57,18 +64,13 @@ public class SubstratumLauncher extends Activity {
     }
 
     private void startAntiPiracyCheck(final Boolean theme_legacy, final Boolean refresh_mode) {
-        /* This is commented out because I don't need piracy check LOL
-        // TODO: Themers, this is your FOURTH step
-        //Log.e("SubstratumAntiPiracyLog", PiracyCheckerUtils.getAPKSignature(this));
-        // COMMENT OUT THE ABOVE LINE ONCE YOU OBTAINED YOUR APK SIGNATURE USING
-        // TWO DASHES (LIKE THIS EXACT LINE)
 
         new PiracyChecker(this)
 
                 // TODO: Themers, this is your FINAL step
                 // To disable certain piracy features, comment it out so that it doesn't
                 // trigger anti-piracy.
-                .enableInstallerId(InstallerID.GOOGLE_PLAY)
+                //.enableInstallerId(InstallerID.GOOGLE_PLAY)
                 //.enableInstallerId(InstallerID.AMAZON_APP_STORE)
                 //.enableGooglePlayLicensing(BASE_64_LICENSE_KEY)
                 //.enableSigningCertificate(APK_SIGNATURE_PRODUCTION)
@@ -116,16 +118,10 @@ public class SubstratumLauncher extends Activity {
 
                     @Override
                     public void dontAllow(PiracyCheckerError error) {
-                        String parse = String.format(getString(R.string.toast_unlicensed),
-                                getString(R.string.ThemeName));
-                        Toast toast = Toast.makeText(getApplicationContext(), parse,
-                                Toast.LENGTH_SHORT);
-                        toast.show();
                         finish();
                     }
                 })
                 .start();
-                */
     }
 
     @Override

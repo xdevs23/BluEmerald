@@ -54,4 +54,7 @@ dependencies {
 
     // AppCompat
     compile 'com.android.support:appcompat-v7:24.1.1'
+
+    // PiracyChecker
+    compile 'com.github.javiersantos:PiracyChecker:0.0.2'
 }
