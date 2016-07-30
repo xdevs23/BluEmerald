@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SubstratumThemeTemplate.iml" filepath="$PROJECT_DIR$/SubstratumThemeTemplate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BluEmerald.iml" filepath="$PROJECT_DIR$/BluEmerald.iml" />
+      <module fileurl="file://$PROJECT_DIR$/theme/theme.iml" filepath="$PROJECT_DIR$/theme/theme.iml" />
     </modules>
   </component>
 </project>

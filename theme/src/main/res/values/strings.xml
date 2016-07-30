@@ -9,6 +9,12 @@
     <string name="theme_author" translatable="false">xdevs23</string>
     <string name="theme_email" translatable="false">xdevs23@outlook.com</string>
 
+    <!-- For Substratum -->
+    <string name="ThemeName" translatable="false">@string/theme_name</string>
+    <string name="ThemeAuthor">@string/theme_author</string>
+
+    <string name="toast_substratum">You need the Substratum Theme Manager for this theme</string>
+
     <string name="updater_starter_name" translatable="false">BluEmerald Updater</string>
 
     <!-- General stuff -->
