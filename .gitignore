@@ -57,3 +57,7 @@ app/src/main/res/values/fabric_api_settings.xml
 
 # Versions
 versions/
+
+# Transformed overlays and intermediates
+cmtheme/resolved/
+cmtheme/intermediates/
