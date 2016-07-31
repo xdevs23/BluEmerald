@@ -25,6 +25,11 @@ if [ "$1" == "--gpw" ]; then
   export ENV_BLUEMERALD_STOREPWD="$3"
 fi
 
+if [ "$1" == "nocert" ]; then
+  export ENV_BLUEMERALD_KEYPWD="dummy"
+  export ENV_BLUEMERALD_STOREPWD="dummy"
+fi
+
 if [ -z $ENV_BLUEMERALD_KEYPWD ]; then
   welcome
   echo "First of all the keystore needs to be configured."

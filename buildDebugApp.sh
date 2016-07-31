@@ -4,7 +4,7 @@ echo "Configuring..."
 source configure.sh $1
 
 echo "Starting build..."
-./gradlew assembleAppDebug
+[ "$1" == "nocert" ] && ./gradlew assembleDebug || ./gradlew assembleAppDebug
 
 #echo "Cleaning up..."
 source makescripts/99cleanup.sh
