@@ -9,10 +9,10 @@
     <color name="system_primary_color">#ff14191f</color>
 
     <!-- Quick settings header background -->
-    <color name="system_secondary_color">@*common:color/darknight_bg</color>
+    <color name="system_secondary_color">@*common:color/__darknight_bg</color>
 
     <!--- Accent color -->
-    <color name="system_accent_color">@*common:color/accent</color>
+    <color name="system_accent_color">@*common:color/__accent</color>
 
 
     <color name="qs_text">#feffffff</color>

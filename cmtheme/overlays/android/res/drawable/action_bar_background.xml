@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape>
-    <solid color="@*common:color/primary" />
+    <solid color="@*common:color/__primary" />
 </shape>

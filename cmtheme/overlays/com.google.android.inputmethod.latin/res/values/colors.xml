@@ -2,7 +2,7 @@
 <resources>
 
 
-    <color name="key_text_color_lxx_light">@*common:color/blue_A400</color>
+    <color name="key_text_color_lxx_light">@*common:color/__blue_A400</color>
     <color name="key_functional_text_color_lxx_light">#CC2979FF</color>
     <color name="key_text_inactive_color_lxx_light">#B32979FF</color>
     <color name="key_hint_letter_color_lxx_light">#B32979FF</color>
@@ -13,31 +13,31 @@
     <color name="suggested_word_color_lxx_light">#B42979FF</color>
     <color name="gesture_trail_color_lxx_light">#2979FF</color>
     <color name="sliding_key_input_preview_color_lxx_light">#B32979FF</color>
-    <color name="key_background_lxx_light">@*common:color/darknight_bg</color>
+    <color name="key_background_lxx_light">@*common:color/__darknight_bg</color>
     <color name="key_background_pressed_lxx_light">#b33f4960</color>
     <color name="suggested_word_background_selected_lxx_light">#262979FF</color>
     <color name="gesture_floating_preview_color_lxx_light">#E62979FF</color>
-    <color name="emoji_tab_page_indicator_background_lxx_light">@*common:color/darknight_bg</color>
+    <color name="emoji_tab_page_indicator_background_lxx_light">@*common:color/__darknight_bg</color>
 
 
-    <color name="key_text_color_lxx_dark">@*common:color/_primary_text_white</color>
+    <color name="key_text_color_lxx_dark">@*common:color/___primary_text_white</color>
     <color name="key_functional_text_color_lxx_dark">@color/key_text_color_lxx_dark</color>
-    <color name="key_text_inactive_color_lxx_dark">@*common:color/_secondary_text_white</color>
+    <color name="key_text_inactive_color_lxx_dark">@*common:color/___secondary_text_white</color>
     <color name="key_hint_letter_color_lxx_dark">@color/key_text_inactive_color_lxx_dark</color>
     <color name="language_on_spacebar_text_color_lxx_dark">#b4fefefe</color>
-    <color name="highlight_color_lxx_dark">@*common:color/primary_lighter</color>
+    <color name="highlight_color_lxx_dark">@*common:color/__primary_lighter</color>
     <color name="auto_correct_color_lxx_dark">#fefefe</color>
     <color name="typed_word_color_lxx_dark">#dafdfdfd</color>
     <color name="suggested_word_color_lxx_dark">#b4fefefe</color>
-    <color name="gesture_trail_color_lxx_dark">@*common:color/accent</color>
-    <color name="sliding_key_input_preview_color_lxx_dark">@*common:color/primary_darker</color>
-    <color name="key_background_lxx_dark">@*common:color/dark_bg_accent_darker</color>
+    <color name="gesture_trail_color_lxx_dark">@*common:color/__accent</color>
+    <color name="sliding_key_input_preview_color_lxx_dark">@*common:color/__primary_darker</color>
+    <color name="key_background_lxx_dark">@*common:color/__dark_bg_accent_darker</color>
     <color name="key_background_pressed_lxx_dark">#20fdfdfd</color>
     <color name="suggested_word_background_selected_lxx_dark">#20fdfdfd</color>
     <color name="gesture_floating_preview_color_lxx_dark">#e621272b</color>
-    <color name="emoji_tab_page_indicator_background_lxx_dark">@*common:color/dark_bg_accent_darker</color>
+    <color name="emoji_tab_page_indicator_background_lxx_dark">@*common:color/__dark_bg_accent_darker</color>
 
     <!-- Accent color for the notification. We need to match this to the OS build -->
-    <color name="notification_accent_color">@*common:color/dark_bg_accent_darker</color>
+    <color name="notification_accent_color">@*common:color/__dark_bg_accent_darker</color>
 
 </resources>

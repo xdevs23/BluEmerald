@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@*common:color/white_semi_min_transparent" />
+            <solid android:color="@*common:color/__white_semi_min_transparent" />
         </shape>
     </item>
     <item android:bottom="1.0px">
@@ -12,7 +12,7 @@
     </item>
     <item android:bottom="1.0px" android:top="1.0dip">
         <shape android:shape="rectangle">
-            <solid android:color="@*common:color/white_semi_min_transparent" />
+            <solid android:color="@*common:color/__white_semi_min_transparent" />
         </shape>
     </item>
 </layer-list>

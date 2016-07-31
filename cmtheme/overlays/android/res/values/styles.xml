@@ -2,10 +2,10 @@
 <resources>
     <!-- Dark settings theme -->
     <style name="Theme.Material.Settings" parent="@android:style/Theme.Material">
-        <item name="android:colorPrimary">@*common:color/primary_darker</item>
-        <item name="android:colorPrimaryDark">@*common:color/primary_dark</item>
-        <item name="android:colorAccent">@*common:color/accent</item>
-        <item name="android:colorControlActivated">@*common:color/primary</item>
+        <item name="android:colorPrimary">@*common:color/__primary_darker</item>
+        <item name="android:colorPrimaryDark">@*common:color/__primary_dark</item>
+        <item name="android:colorAccent">@*common:color/__accent</item>
+        <item name="android:colorControlActivated">@*common:color/__primary</item>
         <item name="android:windowBackground">@android:color/darker_gray</item>
     </style>
 
@@ -19,34 +19,34 @@
     </style>
 
     <style name="Widget.DeviceDefault.Light.PopupWindow" parent="@android:style/Widget.Material.PopupWindow">
-        <item name="android:textColor">@*common:color/_primary_text_white</item>
-        <item name="android:textColorHint">@*common:color/_secondary_text_white</item>
-        <item name="android:popupBackground">@*common:color/dark_bg_accent</item>
+        <item name="android:textColor">@*common:color/___primary_text_white</item>
+        <item name="android:textColorHint">@*common:color/___secondary_text_white</item>
+        <item name="android:popupBackground">@*common:color/__dark_bg_accent</item>
     </style>
 
     <!-- Notification text color -->
     <style name="TextAppearance.Material.Notification" parent="@android:style/TextAppearance.Material">
         <item name="android:textSize">@dimen/notification_text_size</item>
-        <item name="android:textColor">@*common:color/_primary_text_white</item>
+        <item name="android:textColor">@*common:color/___primary_text_white</item>
     </style>
     <style name="TextAppearance.Material.Notification.Emphasis" parent="@style/TextAppearance.Material.Notification">
         <item name="android:textColor">#aafefefe</item>
     </style>
     <style name="TextAppearance.Material.Notification.Title" parent="@style/TextAppearance.Material.Notification">
         <item name="android:textSize">@dimen/notification_title_text_size</item>
-        <item name="android:textColor">@*common:color/_primary_text_white</item>
+        <item name="android:textColor">@*common:color/___primary_text_white</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
     <style name="TextAppearance.Material.Notification.Info" parent="@style/TextAppearance.Material.Notification">
-        <item name="android:textColor">@*common:color/_secondary_text_white</item>
+        <item name="android:textColor">@*common:color/___secondary_text_white</item>
         <item name="android:textSize">@dimen/notification_subtext_size</item>
     </style>
     <style name="TextAppearance.Material.Notification.Line2" parent="@style/TextAppearance.Material.Notification">
-        <item name="android:textColor">@*common:color/_primary_text_white</item>
+        <item name="android:textColor">@*common:color/___primary_text_white</item>
         <item name="android:textSize">@dimen/notification_subtext_size</item>
     </style>
     <style name="TextAppearance.Material.Notification.Time" parent="@style/TextAppearance.Material.Notification">
-        <item name="android:textColor">@*common:color/_secondary_text_white</item>
+        <item name="android:textColor">@*common:color/___secondary_text_white</item>
         <item name="android:textSize">@dimen/notification_subtext_size</item>
     </style>
 
@@ -78,7 +78,7 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:listPreferredItemPaddingStart">@dimen/dialog_padding_material</item>
         <item name="android:listPreferredItemPaddingEnd">@dimen/dialog_padding_material</item>
-        <item name="android:colorControlActivated">@*common:color/accent</item>
+        <item name="android:colorControlActivated">@*common:color/__accent</item>
         <item name="android:windowDrawsSystemBarBackgrounds">false</item>
     </style>
 

@@ -5,83 +5,83 @@
 
     <color name="divider">#1f000000</color>
     
-    <color name="ripple_material_dark">@*common:color/ripple_color_dark</color>
+    <color name="ripple_material_dark">@*common:color/__ripple_color_dark</color>
     <color name="floating_action_button_touch_tint">#80ffffff</color>
     
-    <color name="theme_accent">@*common:color/accent</color>
+    <color name="theme_accent">@*common:color/__accent</color>
     
     <color name="screencolor_background">#50000000</color>
     
     <color name="expanded_button_color_normal">#ff4caf50</color>
     <color name="expanded_button_color_close">#fff44336</color>
     
-    <color name="qs_tile_tint_color">@*common:color/accent</color>
+    <color name="qs_tile_tint_color">@*common:color/__accent</color>
 
     <color name="text_color_translucent_white">#b3ffffff</color>
 
-    <color name="dashboard_background_color">@*common:color/dark_bg_accent</color>
-    <color name="dashboard_category_background_color">@*common:color/dark_bg_accent</color>
-    <color name="cardview_light_background">@*common:color/dark_bg_accent_lighter</color>
+    <color name="dashboard_background_color">@*common:color/__dark_bg_accent</color>
+    <color name="dashboard_category_background_color">@*common:color/__dark_bg_accent</color>
+    <color name="cardview_light_background">@*common:color/__dark_bg_accent_lighter</color>
 
     <color name="switchbar_text_color">#feffffff</color>
 
     <color name="single_button_panel_button_text_color">#feffffff</color>
 
     <color name="divider_color">#20ffffff</color>
-    <color name="title_color">@*common:color/blue_500</color>
+    <color name="title_color">@*common:color/__blue_500</color>
 
-    <color name="theme_primary">@*common:color/blue_800</color>
-    <color name="theme_primary_dark">@*common:color/blue_900</color>
+    <color name="theme_primary">@*common:color/__blue_800</color>
+    <color name="theme_primary_dark">@*common:color/__blue_900</color>
 
-    <color name="card_background">@*common:color/dark_bg_accent</color>
+    <color name="card_background">@*common:color/__dark_bg_accent</color>
 
     <color name="text_color_black">#fefefefe</color>
-    <color name="text_color">@*common:color/_primary_text_white</color>
-    <color name="background_color_white">@*common:color/dark_bg_accent</color>
-    <color name="background_color_gray">@*common:color/dark_bg_accent_darker</color>
+    <color name="text_color">@*common:color/___primary_text_white</color>
+    <color name="background_color_white">@*common:color/__dark_bg_accent</color>
+    <color name="background_color_gray">@*common:color/__dark_bg_accent_darker</color>
     <color name="text_color_secondary_text_material_light">#dbfefefe</color>
 
-    <color name="switchbar_background_color">@*common:color/blue_700</color>
-    <color name="switch_accent_color">@*common:color/blue_200</color>
+    <color name="switchbar_background_color">@*common:color/__blue_700</color>
+    <color name="switch_accent_color">@*common:color/__blue_200</color>
 
-    <color name="icon_accent">@*common:color/accent</color>
-    <color name="colorPrimary">@*common:color/primary_dark</color>
+    <color name="icon_accent">@*common:color/__accent</color>
+    <color name="colorPrimary">@*common:color/__primary_dark</color>
 
-    <color name="Liquid_Main_Icon">@*common:color/accent</color>
-    <color name="Liquid_Advanced_Icon">@*common:color/accent</color>
-    <color name="Liquid_Equalizer_Icon">@*common:color/accent</color>
-    <color name="Liquid_Interface_Icon">@*common:color/accent</color>
-    <color name="Liquid_Lockscreen_Icon">@*common:color/accent</color>
-    <color name="Liquid_Misc_Icon">@*common:color/accent</color>
-    <color name="Liquid_Navigation_Icon">@*common:color/accent</color>
-    <color name="Liquid_Notifications_Icon">@*common:color/accent</color>
-    <color name="Liquid_Performance_Icon">@*common:color/accent</color>
-    <color name="Liquid_Statusbar_Icon">@*common:color/accent</color>
-    <color name="Liquid_SuperSU_Icon">@*common:color/accent</color>
+    <color name="Liquid_Main_Icon">@*common:color/__accent</color>
+    <color name="Liquid_Advanced_Icon">@*common:color/__accent</color>
+    <color name="Liquid_Equalizer_Icon">@*common:color/__accent</color>
+    <color name="Liquid_Interface_Icon">@*common:color/__accent</color>
+    <color name="Liquid_Lockscreen_Icon">@*common:color/__accent</color>
+    <color name="Liquid_Misc_Icon">@*common:color/__accent</color>
+    <color name="Liquid_Navigation_Icon">@*common:color/__accent</color>
+    <color name="Liquid_Notifications_Icon">@*common:color/__accent</color>
+    <color name="Liquid_Performance_Icon">@*common:color/__accent</color>
+    <color name="Liquid_Statusbar_Icon">@*common:color/__accent</color>
+    <color name="Liquid_SuperSU_Icon">@*common:color/__accent</color>
 
     <!-- Other stuff -->
 
     <color name="data_usage_stroke_color">#00000000</color>
-    <color name="data_usage_fill_color">@*common:color/accent</color>
-    <color name="data_usage_secondary_fill_color">@*common:color/primary_lighter</color>
-    <color name="data_usage_label_color">@*common:color/primary_dark</color>
-    <color name="data_usage_secondary_label_color">@*common:color/deep_orange_800</color>
+    <color name="data_usage_fill_color">@*common:color/__accent</color>
+    <color name="data_usage_secondary_fill_color">@*common:color/__primary_lighter</color>
+    <color name="data_usage_label_color">@*common:color/__primary_dark</color>
+    <color name="data_usage_secondary_label_color">@*common:color/__deep_orange_800</color>
     
     <color name="lockscreen_shortcuts_text_color">#ff424242</color>
     <color name="lockscreen_shortcuts_tint_color">#ff333333</color>
     <color name="ownerinfo_divider_color">#ff404040</color>
     <color name="security_settings_billing_desc_color">#ffffb060</color>
     
-    <color name="nfc_how_it_works_main_background">@*common:color/blue_200</color>
-    <color name="nfc_how_it_works_background">@*common:color/light_blue_200</color>
-    <color name="nfc_how_it_works_title_text_color">@*common:color/blue_900</color>
-    <color name="nfc_how_it_works_content_text_color">@*common:color/light_blue_900</color>
+    <color name="nfc_how_it_works_main_background">@*common:color/__blue_200</color>
+    <color name="nfc_how_it_works_background">@*common:color/__light_blue_200</color>
+    <color name="nfc_how_it_works_title_text_color">@*common:color/__blue_900</color>
+    <color name="nfc_how_it_works_content_text_color">@*common:color/__light_blue_900</color>
     <color name="nfc_how_it_works_footer_background">@color/nfc_how_it_works_background</color>
-    <color name="nfc_how_it_works_got_it_text_color">@*common:color/blue_900</color>
+    <color name="nfc_how_it_works_got_it_text_color">@*common:color/__blue_900</color>
     
     <color name="security_settings_billing_desc_text_color">#ffffb060</color>
     
-    <color name="storage_summary_text_color">@*common:color/blue_500</color>
+    <color name="storage_summary_text_color">@*common:color/__blue_500</color>
     <color name="storage_summary_used_text_color">#8a000000</color>
     <color name="storage_volume_color_public">#ff9e9e9e</color>
     <color name="storage_volume_color_warning">#fff4511e</color>
@@ -92,7 +92,7 @@
     <color name="storage_volume_color_private5">#ffc0ca33</color>
     
     <color name="eject_icon_tint_color">#8a000000</color>
-    <color name="external_tile_icon_tint_color">@*common:color/accent</color>
+    <color name="external_tile_icon_tint_color">@*common:color/__accent</color>
     <color name="factory_reset_color">#fffe412c</color>
     
     <color name="blacklist_enabled">#ffdd2c00</color>
@@ -111,8 +111,8 @@
     <color name="memory_music">#ff689f38</color>
     <color name="memory_cache">#ff283593</color>
     <color name="memory_misc">#ff7b1fa2</color>
-    <color name="memory_user_light">@*common:color/blue_400</color>
-    <color name="memory_user_dark">@*common:color/blue_500</color>
+    <color name="memory_user_light">@*common:color/__blue_400</color>
+    <color name="memory_user_dark">@*common:color/__blue_500</color>
     <color name="crypt_keeper_clock_background">#ff9a9a9a</color>
     <color name="crypt_keeper_clock_foreground">#ff666666</color>
     <color name="crypt_keeper_clock_am_pm">#ff9a9a9a</color>
@@ -123,7 +123,7 @@
     <color name="setup_lock_pattern_view_regular_color_dark">#ffbdbdbd</color>
     <color name="setup_lock_pattern_view_regular_color_light">@color/lock_pattern_view_regular_color</color>
     <color name="setup_lock_pattern_view_success_color_dark">#ff84ffff</color>
-    <color name="setup_lock_pattern_view_success_color_light">@*common:color/blue_400</color>
+    <color name="setup_lock_pattern_view_success_color_light">@*common:color/__blue_400</color>
     <color name="setup_lock_pattern_view_error_color_dark">#fff44336</color>
     <color name="setup_lock_pattern_view_error_color_light">@color/lock_pattern_view_error_color</color>
     <color name="setup_wizard_wifi_color_dark">#89ffffff</color>
@@ -139,19 +139,19 @@
     <color name="unlock_pattern_view_regular_color">#ffffffff</color>
     <color name="unlock_pattern_view_error_color">@color/system_warning_color</color>
     
-    <color name="fingerprint_title_area_bg">@*common:color/accent</color>
+    <color name="fingerprint_title_area_bg">@*common:color/__accent</color>
     <color name="fingerprint_title_color">#ffffffff</color>
     <color name="fingerprint_message_color">#de000000</color>
-    <color name="fingerprint_progress_ring">@*common:color/accent</color>
+    <color name="fingerprint_progress_ring">@*common:color/__accent</color>
     <color name="fingerprint_progress_ring_bg">#20000000</color>
     <color name="fingerprint_indicator_background_resting">#12000000</color>
     
     <color name="running_processes_system_ram">#ff384248</color>
-    <color name="running_processes_apps_ram">@*common:color/blue_600</color>
+    <color name="running_processes_apps_ram">@*common:color/__blue_600</color>
     <color name="running_processes_free_ram">#ffc4c4c4</color>
     
     <color name="wifi_divider">#0f000000</color>
-    <color name="sim_noitification">@*common:color/blue_600</color>
+    <color name="sim_noitification">@*common:color/__blue_600</color>
     
     <color name="regulatory_text_color">#fffefefe</color>
     
@@ -159,7 +159,7 @@
     <color name="confirm_device_credential_dark_background">#ff263238</color>
     
     <color name="fab_ripple">#1fffffff</color>
-    <color name="fab_shape">@*common:color/accent</color>
+    <color name="fab_shape">@*common:color/__accent</color>
     
     <color name="voice_interaction_highlight">#ff33b5e5</color>
     

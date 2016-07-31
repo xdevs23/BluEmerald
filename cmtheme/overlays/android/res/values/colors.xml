@@ -14,18 +14,18 @@
     <color name="hint_foreground_light">#808080</color>
     <color name="highlighted_text_dark">#9983cc39</color>
     <color name="highlighted_text_light">#9983cc39</color>
-    <color name="link_text_dark">@*common:color/primary</color>
-    <color name="link_text_light">@*common:color/primary_dark</color>
+    <color name="link_text_dark">@*common:color/__primary</color>
+    <color name="link_text_light">@*common:color/__primary_dark</color>
     <color name="suggestion_highlight_text">#177bbd</color>
 
     <color name="input_method_navigation_guard">#ff000000</color>
 
     <!-- For settings framework -->
     <color name="lighter_gray">#dedede</color>
-    <color name="darker_gray">@*common:color/dark_bg_accent</color>
+    <color name="darker_gray">@*common:color/__dark_bg_accent</color>
 
     <!-- Keyguard tab -->
-    <color name="keyguard_text_color_normal">@*common:color/_primary_text_white</color>
+    <color name="keyguard_text_color_normal">@*common:color/___primary_text_white</color>
     <color name="keyguard_text_color_unlock">#a0db56</color>
     <color name="keyguard_text_color_decline">#fa0848</color>
 
@@ -61,7 +61,7 @@
 
     <color name="accessibility_focus_highlight">#bf39b500</color>
 
-    <color name="system_notification_accent_color">@*common:color/blue_500</color>
+    <color name="system_notification_accent_color">@*common:color/__blue_500</color>
     <color name="battery_saver_mode_color">#fff4511e</color>
 
 
@@ -69,50 +69,50 @@
 
 
     <color name="notification_mtrl_big_picture_bg">#cceeeeee</color>
-    <color name="resolver_list_bg">@*common:color/dark_bg_accent</color> <!-- Chooser -->
+    <color name="resolver_list_bg">@*common:color/__dark_bg_accent</color> <!-- Chooser -->
     <color name="edit_side_paste_window_text_color">@android:color/black</color>
     <color name="edit_paste_window_text_color">@android:color/black</color>
     <color name="edit_action_popup_text_color">@android:color/black</color>
-    <color name="web_view_dropdown_text_color">@*common:color/dark_bg_accent</color>
-    <color name="web_view_dropdown_background_color">@*common:color/_primary_text_white</color>
-    <color name="perms_costs_money_text_color">@*common:color/deep_orange_600</color>
+    <color name="web_view_dropdown_text_color">@*common:color/__dark_bg_accent</color>
+    <color name="web_view_dropdown_background_color">@*common:color/___primary_text_white</color>
+    <color name="perms_costs_money_text_color">@*common:color/__deep_orange_600</color>
     <color name="loading_view_text_color">#64fefefe</color>
     <color name="loading_view_text_shadow_color">#ff020202</color>
     <color name="notification_action_tombstone_text_color">#aaaaaa</color>
     <color name="character_picker_button_text_color">#fefefefe</color>
-    <color name="activity_list_divider_color">@*common:color/primary</color>
-    <color name="dialog_divider_color">@*common:color/primary</color>
+    <color name="activity_list_divider_color">@*common:color/__primary</color>
+    <color name="dialog_divider_color">@*common:color/__primary</color>
     <color name="typing_filter_text_color">#a0ffffff</color>
     <color name="typing_filter_background_color">#bb000000</color>
     <color name="status_bar_latest_event_content_bg_color">#fffe01fe</color>
     <color name="media_controller_background_color">#cc000000</color>
     <color name="immersive_cling_bg_color">#ff009688</color>
-    <color name="immersive_cling_text_color">@*common:color/_primary_text_white</color>
+    <color name="immersive_cling_text_color">@*common:color/___primary_text_white</color>
     <color name="immersive_cling_button_text_color">@android:color/white</color>
     <color name="app_permission_icon_tint">@android:color/white</color>
-    <color name="notification_mtrl_action_textcolor">@*common:color/_primary_text_white</color>
+    <color name="notification_mtrl_action_textcolor">@*common:color/___primary_text_white</color>
 
     <!-- colors_material.xml -->
 
 
-    <color name="background_material_dark">@*common:color/dark_bg_accent</color>
-    <color name="background_material_light">@*common:color/light_bg_accent</color>
-    <color name="background_floating_material_dark">@*common:color/dark_bg_special</color>
-    <color name="background_floating_material_light">@*common:color/light_bg_accent_lighter</color>
+    <color name="background_material_dark">@*common:color/__dark_bg_accent</color>
+    <color name="background_material_light">@*common:color/__light_bg_accent</color>
+    <color name="background_floating_material_dark">@*common:color/__dark_bg_special</color>
+    <color name="background_floating_material_light">@*common:color/__light_bg_accent_lighter</color>
 
     <color name="primary_material_dark">#ff222222</color>
     <color name="primary_material_light">#ffefefef</color>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff767676</color>
 
-    <color name="ripple_material_dark">@*common:color/ripple_color_dark</color>
-    <color name="ripple_material_light">@*common:color/ripple_color_light</color>
+    <color name="ripple_material_dark">@*common:color/__ripple_color_dark</color>
+    <color name="ripple_material_light">@*common:color/__ripple_color_light</color>
 
-    <color name="accent_material_light">@*common:color/primary_darker</color>
-    <color name="accent_material_dark">@*common:color/primary</color>
+    <color name="accent_material_light">@*common:color/__primary_darker</color>
+    <color name="accent_material_dark">@*common:color/__primary</color>
 
-    <color name="button_material_dark">@*common:color/primary</color>
-    <color name="button_material_light">@*common:color/primary_lighter</color>
+    <color name="button_material_dark">@*common:color/__primary</color>
+    <color name="button_material_light">@*common:color/__primary_lighter</color>
 
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
@@ -126,18 +126,18 @@
     <color name="highlighted_text_material_dark">#661e88e5</color>
     <color name="highlighted_text_material_light">#661976d2</color>
 
-    <color name="link_text_material_dark">@*common:color/primary</color>
-    <color name="link_text_material_light">@*common:color/primary_darker</color>
+    <color name="link_text_material_dark">@*common:color/__primary</color>
+    <color name="link_text_material_light">@*common:color/__primary_darker</color>
 
-    <color name="chooser_service_row_background_color">@*common:color/dark_bg_accent</color>
+    <color name="chooser_service_row_background_color">@*common:color/__dark_bg_accent</color>
 
     <!-- Text & foreground colors -->
 
-    <color name="primary_text_default_material_light">@*common:color/_primary_text_black</color>
-    <color name="secondary_text_default_material_light">@*common:color/_secondary_text_black</color>
+    <color name="primary_text_default_material_light">@*common:color/___primary_text_black</color>
+    <color name="secondary_text_default_material_light">@*common:color/___secondary_text_black</color>
 
-    <color name="primary_text_default_material_dark">@*common:color/_primary_text_white</color>
-    <color name="secondary_text_default_material_dark">@*common:color/_secondary_text_white</color>
+    <color name="primary_text_default_material_dark">@*common:color/___primary_text_white</color>
+    <color name="secondary_text_default_material_dark">@*common:color/___secondary_text_white</color>
 
     <!-- Primary & accent colors -->
 
@@ -160,8 +160,8 @@
     <!-- colors_holo.xml -->
 
 
-    <color name="background_holo_dark">@*common:color/dark_bg_accent_darker</color>
-    <color name="background_holo_light">@*common:color/light_bg_accent</color>
+    <color name="background_holo_dark">@*common:color/__dark_bg_accent_darker</color>
+    <color name="background_holo_light">@*common:color/__light_bg_accent</color>
     <color name="bright_foreground_holo_dark">@color/background_holo_light</color>
     <color name="bright_foreground_holo_light">@color/background_holo_dark</color>
     <color name="bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
@@ -222,8 +222,8 @@
 
     <!-- Highlight colors for the legacy themes -->
 
-    <color name="legacy_pressed_highlight">@*common:color/primary_lighter</color>
-    <color name="legacy_selected_highlight">@*common:color/primary</color>
+    <color name="legacy_pressed_highlight">@*common:color/__primary_lighter</color>
+    <color name="legacy_selected_highlight">@*common:color/__primary</color>
     <color name="legacy_long_pressed_highlight">#feffffff</color>
 
     <!-- Forward compatibility for Material-style theme colors -->

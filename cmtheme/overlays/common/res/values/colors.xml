@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="primary_ultralight">@*common:color/blue_200</color>
-    <color name="primary_light">@*common:color/blue_400</color>
-    <color name="primary_lighter">@*common:color/blue_500</color>
-    <color name="primary">@*common:color/blue_600</color>
-    <color name="primary_darker">@*common:color/blue_700</color>
-    <color name="primary_dark">@*common:color/blue_800</color>
-    <color name="primary_dark_darker">@*common:color/blue_900</color>
-    <color name="primary_ultradark">@*common:color/blue_950</color>
+    <color name="__primary_ultralight">@*common:color/__blue_200</color>
+    <color name="__primary_light">@*common:color/__blue_400</color>
+    <color name="__primary_lighter">@*common:color/__blue_500</color>
+    <color name="__primary">@*common:color/__blue_600</color>
+    <color name="__primary_darker">@*common:color/__blue_700</color>
+    <color name="__primary_dark">@*common:color/__blue_800</color>
+    <color name="__primary_dark_darker">@*common:color/__blue_900</color>
+    <color name="__primary_ultradark">@*common:color/__blue_950</color>
 
-    <color name="dark_bg_accent">#1e1e1e</color>
-    <color name="dark_bg_accent_lighter">#282828</color>
-    <color name="dark_bg_accent_darker">#121212</color>
-    <color name="dark_bg_special">#ff303033</color>
+    <color name="__dark_bg_accent">#1e1e1e</color>
+    <color name="__dark_bg_accent_lighter">#282828</color>
+    <color name="__dark_bg_accent_darker">#121212</color>
+    <color name="__dark_bg_special">#ff303033</color>
 
-    <color name="light_bg_accent">#fffdfdfd</color>
-    <color name="light_bg_accent_lighter">#fffefefe</color>
-    <color name="light_bg_accent_darker">#fffafafa</color>
-    <color name="light_bg_special">#fff0f0f0</color>
+    <color name="__light_bg_accent">#fffdfdfd</color>
+    <color name="__light_bg_accent_lighter">#fffefefe</color>
+    <color name="__light_bg_accent_darker">#fffafafa</color>
+    <color name="__light_bg_special">#fff0f0f0</color>
 
-    <color name="darknight_bg">#0f1920</color>
+    <color name="__darknight_bg">#0f1920</color>
 
-    <color name="ripple_color_dark">@*common:color/primary_darker</color>
-    <color name="ripple_color_light">@*common:color/primary</color>
-    <color name="ripple_color_dark_t">#a01976d2</color>
-    <color name="ripple_color_light_t">#a01e88e5</color>
+    <color name="__ripple_color_dark">@*common:color/__primary_darker</color>
+    <color name="__ripple_color_light">@*common:color/__primary</color>
+    <color name="__ripple_color_dark_t">#a01976d2</color>
+    <color name="__ripple_color_light_t">#a01e88e5</color>
 
-    <color name="accent">@*common:color/blue_600</color>
+    <color name="__accent">@*common:color/__blue_600</color>
 
-    <color name="_white">#ffffff</color>
-    <color name="_black">#000000</color>
+    <color name="___white">#ffffff</color>
+    <color name="___black">#000000</color>
+    <color name="__black">@*common:color/___black</color>
+    <color name="__white">@*common:color/___white</color>
 
-    <color name="_primary_text_white">#fefefefe</color>
-    <color name="_primary_text_black">#fe000000</color>
-    <color name="_secondary_text_white">#dbf4f4f4</color>
-    <color name="_secondary_text_black">#db0a0a0a</color>
+    <color name="___primary_text_white">#fefefefe</color>
+    <color name="___primary_text_black">#fe000000</color>
+    <color name="___secondary_text_white">#dbf4f4f4</color>
+    <color name="___secondary_text_black">#db0a0a0a</color>
 
-    <color name="divider_color_dark">#72f0f0f0</color>
-    <color name="divider_color_light">#720a0a0a</color>
+    <color name="__divider_color_dark">#72f0f0f0</color>
+    <color name="__divider_color_light">#720a0a0a</color>
 
 </resources>

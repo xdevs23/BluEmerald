@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@*common:color/primary_darker</color>
-    <color name="colorPrimaryDark">@*common:color/blue_900</color>
+    <color name="colorPrimary">@*common:color/__primary_darker</color>
+    <color name="colorPrimaryDark">@*common:color/__blue_900</color>
 </resources>
