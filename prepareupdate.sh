@@ -9,7 +9,7 @@ if [ -z $1 ]; then echo "Usage: source prepareupdate.sh vername vercode vertype"
 else
   if [ ! "$4" == "--updateOnly" ]; then source make.sh; fi
   if [ $UPDATEABLE == "true" ]; then cp "$APPRELPATH" "update/$APPNAME.apk"; fi
-  cp "$APPRELPATH" "versions/$APPNAME-$1-$2$3.apk"
+  cp "$APPRELPATH" "versions/$APPNAME-$1-$2-$3.apk"
 
   if [ $UPDATEABLE == "true" ]; then
     echo -en $1>update/version.txt
@@ -17,4 +17,6 @@ else
 
     nano update/changelog.txt
   fi
+  git add -A
+  git commit -m "update: $1-$2-$3"
 fi
