@@ -5,4 +5,18 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">@dimen/action_bar_height</item>
     </style>
+
+    <style name="ActionBar.Modal" parent="@style/ActionBar">
+        <item name="android:background">@*common:color/primary_darker</item>
+    </style>
+
+    <style name="ActionBarTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@*common:color/_primary_text_white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/action_bar_item_padding</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
 </resources>
