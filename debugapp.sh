@@ -5,7 +5,7 @@ DBGAPKPATH="theme/build/outputs/apk/theme-appdebug.apk"
 if [ -z "$1" ]; then source buildDebugApp.sh; fi
 
 if [ "$1" == "-l" ]; then
-  adb logcat -v tag -s Cornowser:*
+  adb logcat -v tag -s BluEmerald:* Substratum:* OMS:* SubstratumBuilder:* SubstratumManager:* Magpie:* masquerade:* Masquerade:*
 elif [ "$1" == "--cleardata" ]; then
   adb shell pm clear io.xdevs23.theme.bluemerald.cm
 elif [ "$1" == "-i" ]; then
@@ -29,11 +29,5 @@ else
   echo "Installing..."
   adb shell pm set-install-location 1
   adb shell pm install -rdtf /sdcard/BECustom.apk
-  echo "Applying default theme..."
-  adb shell tm apply system
-  sleep 2
-  echo "Applying theme..."
-  adb shell tm apply io.xdevs23.theme.bluemerald.cm
-  sleep 20
   echo "Done - $(date)"
 fi
