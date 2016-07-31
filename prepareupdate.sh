@@ -3,7 +3,7 @@
 APPTYPE="theme"
 APPRELPATH="$APPTYPE/build/outputs/apk/$APPTYPE-release.apk"
 APPNAME="BluEmerald"
-UPDATEABLE="true"
+UPDATEABLE="false"
 
 if [ -z $1 ]; then echo "Usage: source prepareupdate.sh vername vercode vertype"
 else
