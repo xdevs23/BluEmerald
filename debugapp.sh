@@ -30,4 +30,7 @@ else
   adb shell pm set-install-location 1
   adb shell pm install -rdtf /sdcard/BECustom.apk
   echo "Done - $(date)"
+  echo ""
+  echo "Debugging..."
+  source debugapp.sh -l
 fi
