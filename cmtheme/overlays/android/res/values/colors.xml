@@ -22,9 +22,9 @@
 
     <!-- For settings framework -->
     <color name="lighter_gray">#dedede</color>
-    <color name="darker_gray">#969696</color>
+    <color name="darker_gray">@*common:color/dark_bg_accent</color>
 
-    <!-- Leyguard tab -->
+    <!-- Keyguard tab -->
     <color name="keyguard_text_color_normal">@*common:color/_primary_text_white</color>
     <color name="keyguard_text_color_unlock">#a0db56</color>
     <color name="keyguard_text_color_decline">#fa0848</color>
