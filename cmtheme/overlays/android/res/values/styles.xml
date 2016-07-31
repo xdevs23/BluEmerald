@@ -9,6 +9,21 @@
         <item name="android:windowBackground">@android:color/darker_gray</item>
     </style>
 
+    <style name="Theme.Material.Settings.BaseDialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:textColor">#feffffff</item>
+        <item name="android:textColorHint">#fdffffff</item>
+    </style>
+    <style name="Theme.Material.Settings.Dialog.BaseAlert" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:textColor">#feffffff</item>
+        <item name="android:textColorHint">#fdffffff</item>
+    </style>
+
+    <style name="Widget.DeviceDefault.Light.PopupWindow" parent="@android:style/Widget.Material.PopupWindow">
+        <item name="android:textColor">@*common:color/_primary_text_white</item>
+        <item name="android:textColorHint">@*common:color/_secondary_text_white</item>
+        <item name="android:popupBackground">@*common:color/dark_bg_accent</item>
+    </style>
+
     <!-- Notification text color -->
     <style name="TextAppearance.Material.Notification" parent="@android:style/TextAppearance.Material">
         <item name="android:textSize">@dimen/notification_text_size</item>
