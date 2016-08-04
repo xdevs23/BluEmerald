@@ -24,17 +24,15 @@ import com.github.javiersantos.piracychecker.enums.PiracyCheckerError;
 public class SubstratumLauncher extends Activity {
 
     // < STATIC THEMER CRUISE CONTROL >
-    // On Android Studio, please open the bottom window tab before continuing: TODO
+    // On Android Studio, please open the bottom window tab before continuing: t o d o
     // You MUST complete ALL 5 steps!
     //
-    // TODO: Themers, this is your FIRST step
     // UNIVERSAL SWITCH: Control whether Anti-Piracy should be activated while testing
     private static final boolean ENABLE_ANTI_PIRACY = false;
     // In order to retrieve your BASE64 license key your app must be uploaded to
     // Play Developer Console. Then access to your app -> Services and APIs.
     // You will need to replace "" with the code you obtained from the Play Developer Console.
     // If ENABLE_ANTI_PIRACY is false, you may skip this
-    // TODO: Themers, this is your SECOND step
     private static final String BASE_64_LICENSE_KEY = "";
     // Build your signed APK using your signature, and run the app once in Substratum
     // (open your theme). Check your logcat!
@@ -42,7 +40,6 @@ public class SubstratumLauncher extends Activity {
     // head down to line 51. You will need to replace "" with the code you obtained from your
     // logcat.
     // If ENABLE_ANTI_PIRACY is false, you may skip this
-    // TODO: Themers, this is your THIRD step
     private static final String APK_SIGNATURE_PRODUCTION = "";
     //
     // END OF STATIC THEMER CRUISE CONTROL
@@ -65,14 +62,11 @@ public class SubstratumLauncher extends Activity {
     }
     
     private void startAntiPiracyCheck() {
-        // TODO: Themers, this is your FOURTH step
         Log.e("SubstratumAntiPiracyLog", PiracyCheckerUtils.getAPKSignature(this));
         // COMMENT OUT THE ABOVE LINE ONCE YOU OBTAINED YOUR APK SIGNATURE USING
         // TWO DASHES (LIKE THIS EXACT LINE)
 
         PiracyChecker piracyChecker = new PiracyChecker(this)
-
-                // TODO: Themers, this is your FINAL step
                 // To disable certain piracy features, comment it out so that it doesn't
                 // trigger anti-piracy.
                 //.enableInstallerId(InstallerID.GOOGLE_PLAY)
