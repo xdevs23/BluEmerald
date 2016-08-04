@@ -2,6 +2,7 @@ package io.xdevs23.theme.bluemerald.cm;
 
 import android.app.Activity;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -12,11 +13,8 @@ import android.widget.Toast;
 
 import com.github.javiersantos.piracychecker.PiracyChecker;
 import com.github.javiersantos.piracychecker.PiracyCheckerUtils;
-import com.github.javiersantos.piracychecker.enums.InstallerID;
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerCallback;
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerError;
-
-import io.xdevs23.theme.bluemerald.cm.R;
 
 /**
  * @author Nicholas Chum (nicholaschum)
@@ -31,7 +29,7 @@ public class SubstratumLauncher extends Activity {
     //
     // TODO: Themers, this is your FIRST step
     // UNIVERSAL SWITCH: Control whether Anti-Piracy should be activated while testing
-    private static final boolean ENABLE_ANTI_PIRACY = BuildConfig.ENABLE_ANTI_PIRACY;
+    private static final boolean ENABLE_ANTI_PIRACY = false;
     // In order to retrieve your BASE64 license key your app must be uploaded to
     // Play Developer Console. Then access to your app -> Services and APIs.
     // You will need to replace "" with the code you obtained from the Play Developer Console.
