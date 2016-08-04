@@ -46,12 +46,19 @@
 
     <!-- Notifications -->
     <color name="notification_icon_bg_color">#ffa0a0a0</color>
-    <color name="notification_action_color_filter">#fefbfbfb</color>
 
     <color name="notification_media_primary_color">#df1e1e1e</color>
     <color name="notification_media_secondary_color">#df242424</color>
 
     <color name="notification_progress_background_color">#561e88e5</color>
+
+    <color name="system_notification_accent_color">@*common:color/__primary</color>
+
+    <!-- Notification actions -->
+    <color name="notification_action_color_filter">@*common:color/__primary</color>
+
+    <!-- ActivityChooser -->
+    <color name="chooser_service_row_background_color">@*common:color/__dark_bg_accent_darker</color>
 
     <!-- Keyguard colors -->
     <color name="keyguard_avatar_frame_color">#f0ffffff</color>
@@ -61,9 +68,7 @@
 
     <color name="accessibility_focus_highlight">#bf39b500</color>
 
-    <color name="system_notification_accent_color">@*common:color/__blue_500</color>
     <color name="battery_saver_mode_color">#fff4511e</color>
-
 
     <!-- cm_colors.xml -->
 
@@ -94,6 +99,7 @@
 
     <!-- colors_material.xml -->
 
+    <color name="foreground_material_dark">@*common:color/___primary_text_white</color>
 
     <color name="background_material_dark">@*common:color/__dark_bg_accent</color>
     <color name="background_material_light">@*common:color/__light_bg_accent</color>
@@ -112,7 +118,7 @@
     <color name="accent_material_dark">@*common:color/__primary</color>
 
     <color name="button_material_dark">@*common:color/__primary</color>
-    <color name="button_material_light">@*common:color/__primary_lighter</color>
+    <color name="button_material_light">@*common:color/__primary</color>
 
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
@@ -128,8 +134,6 @@
 
     <color name="link_text_material_dark">@*common:color/__primary</color>
     <color name="link_text_material_light">@*common:color/__primary_darker</color>
-
-    <color name="chooser_service_row_background_color">@*common:color/__dark_bg_accent</color>
 
     <!-- Text & foreground colors -->
 
