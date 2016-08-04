@@ -14,7 +14,7 @@
     <string name="ThemeAuthor">@string/theme_author</string>
 
     <string name="toast_substratum">You need the Substratum Theme Manager for this theme</string>
-
+    <string name="toast_substratum_frozen">Substratum is installed, but disabled. Please re-enable Substratum in Settings to continue!</string>
     <string name="updater_starter_name" translatable="false">BluEmerald Updater</string>
 
     <!-- General stuff -->
