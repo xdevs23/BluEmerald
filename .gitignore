@@ -1,17 +1,51 @@
-*.iml
+#############################################################################
+#
+# .gitignore declares what files should be ignored by git
+#
+#    This particular file is a composite of github's Android and Eclipse 
+#                          files, along with some custom additions.
+#
+#############################################################################
+
+#############################################################################
+# Eclipse related files
+#############################################################################
+
+*.pydevproject
+.metadata
 .gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
-/build
-/captures
+bin/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
 
-*.apk
+# External tool builders
+.externalToolBuilders/
 
-.idea/misc.xml
-app/google-services.json
+# Locally stored "Eclipse launch configurations"
+*.launch
 
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin 
+.target
+
+# TeXlipse plugin
+.texlipse
+
+#############################################################################
+# Android related files
+#############################################################################
+
+# Built application files
 *.apk
 # Built application files
 app/*.apk

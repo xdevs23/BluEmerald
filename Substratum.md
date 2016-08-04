@@ -58,12 +58,6 @@ https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/ma
 <string name="ThemeAuthor">Nicholas Chum</string>
 ```
 
-If you want to keep the Play Store shortcut turned off (to disable the launcher icon by default), open this file: https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/main/AndroidManifest.xml
-and delete line 15.
-```
-<category android:name="android.intent.category.LAUNCHER"/>
-```
-
 ## Step 3: Start theming!
 ### Audio
 To install system sound effects, you will need to have an audio folder, just like it's listed here: https://github.com/TeamSubstratum/SubstratumThemeTemplate/tree/master/app/src/main/assets/audio
@@ -160,19 +154,16 @@ If you have a completely white image, your actionbar and nav bar will change to 
 
 ## Step 5: Safeguard your theme! Don't let the pirates win!
 
-### DURING THEME DEBUGGING ON YOUR OWN PHONE
-While debugging your application, you should be setting this to false so that it doesn't keep triggering antipiracy when you are working: https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/main/java/substratum/theme/template/SubstratumLauncher.java#L34
-
 ### If you don't want to activate AntiPiracy
-Set this value to false and the antipiracy check will report back true to Substratum every time:
-https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/main/java/substratum/theme/template/SubstratumLauncher.java#L34
+Set this value to 'false' and the antipiracy check will report back true to Substratum every time:
+https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/main/java/substratum/theme/template/SubstratumLauncher.java#L31
 
 ### Getting started with AntiPiracy
 
-If you are ready to get AntiPiracy set up, you must first compile your theme as a SIGNED production APK from Android Studio (Build -> Compile Signed APK). Then launch the signed apk on your device and your log will spit out an error log under the name "SubstratumAntiPiracyLog", and you want to copy and paste that into Line 76: https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/main/java/substratum/theme/template/SubstratumLauncher.java#L76
+If you are ready to get AntiPiracy set up, you must first compile your theme as a SIGNED production APK from Android Studio (Build -> Compile Signed APK). Then launch the signed apk on your device and your log will spit out an error log under the name "SubstratumAntiPiracyLog", and you want to copy and paste that into Line 45: https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/main/java/substratum/theme/template/SubstratumLauncher.java#L45
 
-Then you would need to go to Play Developer Console. Then access to your app -> Services and APIs, generate a new API key for your app and then paste it in BASE_64_LICENSE_KEY on line 77: https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/main/java/substratum/theme/template/SubstratumLauncher.java#L77
+Then you would need to go to Play Developer Console. Then access to your app -> Services and APIs, generate a new API key for your app and then paste it in BASE_64_LICENSE_KEY on line 37: https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/main/java/substratum/theme/template/SubstratumLauncher.java#L37
 
-Finally, if you would like to change where it checks for piracy, you should just comment out the .enable lines such as if you would not like to have Amazon App Store piracy checking, just disable it below this line: https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/main/java/substratum/theme/template/SubstratumLauncher.java#L76
+Finally, if you would like to change where it checks for piracy, you should just comment out the .enable lines such as if you would not like to have Amazon App Store piracy checking, just disable it below this line: https://github.com/TeamSubstratum/SubstratumThemeTemplate/blob/master/app/src/main/java/substratum/theme/template/SubstratumLauncher.java#L60
 
-# DO NOT SHARE YOUR SUBSTRATUMLAUNCHER.JAVA FILE IF YOU OPEN SOURCE YOUR THEME AND WANT TO KEEP PIRACY!
+# DO NOT SHARE YOUR SUBSTRATUMLAUNCHER.JAVA FILE IF YOU OPEN SOURCE YOUR THEME AND WANT TO KEEP ANTIPIRACY!

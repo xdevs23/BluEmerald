@@ -3,6 +3,7 @@ A blue, flat and shiny theme
 
 ### License
 
+
 ```
     BluEmerald Theme
     Copyright (C) 2016 Simao Gomes Viana
@@ -20,3 +21,4 @@ A blue, flat and shiny theme
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
+
