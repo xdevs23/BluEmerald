@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogWhenReallyLarge" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:textColorSecondary">#ffdddddd</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+</resources>
