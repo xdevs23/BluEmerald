@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Background colors -->
+    <color name="drawer_background_color">@*common:color/__dark_bg_accent</color>
+    <color name="exposed_activity_background_color">@*common:color/__dark_bg_accent</color>
+    <color name="item_doc_grid_protect_background">@*common:color/__dark_bg_accent</color>
+    <color name="item_doc_grid_background">@*common:color/__dark_bg_accent</color>
+
+    <!-- Foreground colors / text colors -->
+    <color name="exposed_font_color_doc_grid">@*common:color/___primary_text_white</color>
+    <color name="font_color_doc_grid">@*common:color/___primary_text_white</color>
+    <color name="item_doc_grid_overlay_activated">#86545454</color>
+    <color name="item_doc_grid_overlay_disabled">#86fefefe</color>
+    <color name="item_doc_list_overlay_disabled">#86fefefe</color>
+    <color name="item_doc_list_background_activated">#98545454</color>
+
+    <!-- Material colors -->
+    <color name="material_grey_50">@*common:color/__grey_950</color>
+    <color name="material_grey_300">@*common:color/__grey_700</color>
+
+</resources>
