@@ -70,11 +70,13 @@
 
     <color name="battery_saver_mode_color">#fff4511e</color>
 
+    <!-- App Chooser (Resolver) -->
+    <color name="exposed_resolver_list_bg">@*common:color/__dark_bg_accent</color>
+    <color name="resolver_list_bg">@*common:color/__dark_bg_accent</color>
+
     <!-- cm_colors.xml -->
 
-
     <color name="notification_mtrl_big_picture_bg">#cceeeeee</color>
-    <color name="resolver_list_bg">@*common:color/__dark_bg_accent</color> <!-- Chooser -->
     <color name="edit_side_paste_window_text_color">@android:color/black</color>
     <color name="edit_paste_window_text_color">@android:color/black</color>
     <color name="edit_action_popup_text_color">@android:color/black</color>

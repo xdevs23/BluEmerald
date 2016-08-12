@@ -10,9 +10,9 @@
     <color name="__primary_dark_darker">@*common:color/__blue_900</color>
     <color name="__primary_ultradark">@*common:color/__blue_950</color>
 
-    <color name="__dark_bg_accent">#1e1e1e</color>
+    <color name="__dark_bg_accent">#121212</color>
     <color name="__dark_bg_accent_lighter">#282828</color>
-    <color name="__dark_bg_accent_darker">#121212</color>
+    <color name="__dark_bg_accent_darker">#111111</color>
     <color name="__dark_bg_special">#ff303033</color>
 
     <color name="__light_bg_accent">#fffdfdfd</color>
