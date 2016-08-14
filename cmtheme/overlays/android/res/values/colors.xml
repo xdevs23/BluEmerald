@@ -73,6 +73,7 @@
     <!-- App Chooser (Resolver) -->
     <color name="exposed_resolver_list_bg">@*common:color/__dark_bg_accent</color>
     <color name="resolver_list_bg">@*common:color/__dark_bg_accent</color>
+    <color name="chooser_grid_bg">@*common:color/__dark_bg_accent</color>
 
     <!-- Some more backgrounds and foregrounds -->
     <color name="background_leanback_dark">@*common:color/__dark_bg_accent</color>
