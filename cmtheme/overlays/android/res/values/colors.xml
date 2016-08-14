@@ -77,8 +77,8 @@
 
     <!-- Some more backgrounds and foregrounds -->
     <color name="background_leanback_dark">@*common:color/__dark_bg_accent</color>
-    <color name="primary_text_leanback_dark">@*common:color/__primary_text_white</color>
-    <color name="secondary_text_leanback_dark">@*common:color/__secondary_text_white</color>
+    <color name="primary_text_leanback_dark">@*common:color/___primary_text_white</color>
+    <color name="secondary_text_leanback_dark">@*common:color/___secondary_text_white</color>
 
     <!-- cm_colors.xml -->
 
