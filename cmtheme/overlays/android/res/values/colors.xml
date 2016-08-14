@@ -74,6 +74,11 @@
     <color name="exposed_resolver_list_bg">@*common:color/__dark_bg_accent</color>
     <color name="resolver_list_bg">@*common:color/__dark_bg_accent</color>
 
+    <!-- Some more backgrounds and foregrounds -->
+    <color name="background_leanback_dark">@*common:color/__dark_bg_accent</color>
+    <color name="primary_text_leanback_dark">@*common:color/__primary_text_white</color>
+    <color name="secondary_text_leanback_dark">@*common:color/__secondary_text_white</color>
+
     <!-- cm_colors.xml -->
 
     <color name="notification_mtrl_big_picture_bg">#cceeeeee</color>
