@@ -111,7 +111,7 @@
 
     <color name="background_material_dark">@*common:color/__dark_bg_accent</color>
     <color name="background_material_light">@*common:color/__light_bg_accent</color>
-    <color name="background_floating_material_dark">@*common:color/__dark_bg_special</color>
+    <color name="background_floating_material_dark">@*common:color/__dark_bg_accent</color>
     <color name="background_floating_material_light">@*common:color/__light_bg_accent_lighter</color>
 
     <color name="primary_material_dark">#ff222222</color>
