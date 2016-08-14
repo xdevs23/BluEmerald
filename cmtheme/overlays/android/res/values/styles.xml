@@ -70,6 +70,7 @@
 
     <style name="Theme.DeviceDefault.Resolver" parent="@android:style/Theme.Material">
         <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundTint">@*common:color/__dark_bg_accent</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
