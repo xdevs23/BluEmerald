@@ -1,5 +1,5 @@
 # BluEmerald
-A blue, flat and shiny theme
+A dark, blue and flat theme.
 
 ### License
 
