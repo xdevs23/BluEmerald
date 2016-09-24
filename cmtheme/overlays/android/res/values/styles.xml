@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Dark settings theme -->
-    <style name="Theme.Material.Settings" parent="@android:style/Theme.Material">
-        <item name="android:colorPrimary">@*common:color/__primary_darker</item>
-        <item name="android:colorPrimaryDark">@*common:color/__primary_dark</item>
-        <item name="android:colorAccent">@*common:color/__accent</item>
-        <item name="android:colorControlActivated">@*common:color/__primary</item>
-        <item name="android:windowBackground">@android:color/darker_gray</item>
-    </style>
+
 
     <style name="Theme.Material.Settings.BaseDialog" parent="@android:style/Theme.Material.Dialog">
         <item name="android:textColor">#feffffff</item>
