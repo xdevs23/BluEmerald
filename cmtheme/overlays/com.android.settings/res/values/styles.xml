@@ -5,10 +5,14 @@
         <item name="android:elevation">0dip</item>
     </style>
 
-    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Settings">
+    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material">
+
+        <!-- Dark settings theme -->
         <item name="android:colorPrimary">@*common:color/__primary_darker</item>
         <item name="android:colorPrimaryDark">@*common:color/__primary_dark</item>
-        <item name="android:colorAccent">@*common:color/__accent</item>
+
+        <item name="android:colorControlActivated">@*common:color/__primary</item>
+        <item name="android:windowBackground">@android:color/darker_gray</item>
         <item name="android:dividerVertical">@drawable/settings_custom_divider</item>
     </style>
 
