@@ -7,8 +7,8 @@ android {
         applicationId "io.xdevs23.theme.bluemerald.cm"
         minSdkVersion 21
         targetSdkVersion 24
-        versionCode 1210
-        versionName "1.2.1"
+        versionCode 1220
+        versionName "1.2.2"
     }
 
     signingConfigs {
