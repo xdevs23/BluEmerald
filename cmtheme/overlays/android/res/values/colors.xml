@@ -56,6 +56,7 @@
 
     <!-- Notification actions -->
     <color name="notification_action_color_filter">@*common:color/__primary</color>
+    <color name="notification_action_list">#1e1e1e</color>
 
     <!-- ActivityChooser -->
     <color name="chooser_service_row_background_color">@*common:color/__dark_bg_accent_darker</color>

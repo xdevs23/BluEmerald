@@ -73,6 +73,12 @@
     <color name="notification_guts_title_color">#feffffff</color>
     <color name="notification_guts_text_color">#b4ffffff</color>
     <color name="notification_guts_btn_color">#feffffff</color>
+    <color name="notification_guts_slider_color">@*common:color/__accent</color>
+
+    <!-- Shade color of notification -->
+    <color name="notification_shade_background_color">#00000000</color>
+
+    <color name="notification_gear_color">#f0fdfdfd</color>
 
     <color name="search_panel_circle_color">#ff000000</color>
     <color name="search_panel_ripple_color">#fff4f4f4</color>
