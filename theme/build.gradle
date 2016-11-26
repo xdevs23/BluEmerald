@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 25
     buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId "io.xdevs23.theme.bluemerald.cm"
         minSdkVersion 21
-        targetSdkVersion 24
-        versionCode 1221
-        versionName "1.2.2"
+        targetSdkVersion 25
+        versionCode 1230
+        versionName "1.2.3"
     }
 
     signingConfigs {
