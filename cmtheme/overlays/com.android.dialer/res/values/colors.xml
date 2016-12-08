@@ -33,6 +33,8 @@
     <!-- Tint of the recent card phone icon -->
     <color name="recent_call_log_item_phone_icon_tint">#000000</color>
 
+    <color name="call_log_primary_color">#ffffff</color>
+
     <color name="call_log_extras_text_color">#0277bd</color>
 
     <color name="voicemail_playback_seek_bar_yet_to_play">@*common:color/__dark_semi_more_transparent</color>
