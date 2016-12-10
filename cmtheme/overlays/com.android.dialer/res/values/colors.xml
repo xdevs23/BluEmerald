@@ -34,7 +34,8 @@
     <color name="recent_call_log_item_phone_icon_tint">#000000</color>
 
     <color name="call_log_primary_color">#ffffff</color>
-    <color name="call_log_day_group_heading_color">#ffffff</color>
+    <color name="call_log_day_group_heading_color">@*common:color/__accent</color>
+    <color name="call_log_detail_color">@*common:color/__accent</color>
 
     <color name="call_log_extras_text_color">#0277bd</color>
 
