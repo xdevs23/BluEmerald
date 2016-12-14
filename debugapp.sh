@@ -2,7 +2,7 @@
 
 DBGAPKPATH="theme/build/outputs/apk/theme-appdebug.apk"
 
-if [ -z "$1" ]; then source buildDebugApp.sh; fi
+if [ -z "$1" ]; then source buildDebugApp.sh; [ $? -ne 0 ] && return $?; fi
 
 if [ "$1" == "-l" ]; then
   adb logcat -v tag -s BluEmerald:* Substratum:* OMS:* SubstratumBuilder:* SubstratumManager:* Magpie:* masquerade:* Masquerade:*
