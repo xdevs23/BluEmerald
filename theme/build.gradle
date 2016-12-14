@@ -21,17 +21,26 @@ android {
     }
 
     buildTypes {
+        def BOOLEAN = "boolean"
+        def TRUE = "true"
+        def FALSE = "false"
+        def ANTI_PIRACY = "ENABLE_ANTI_PIRACY"
+        def SUBSTRATE_MODULE = "SUBSTRATE_MODULE"
         release {
             //noinspection GroovyAssignabilityCheck
             signingConfig signingConfigs.main
             minifyEnabled false
             zipAlignEnabled true
+            buildConfigField(BOOLEAN, ANTI_PIRACY, FALSE)
+            buildConfigField(BOOLEAN, SUBSTRATE_MODULE, FALSE)
         }
 
         debug {
             minifyEnabled false
             debuggable true
             zipAlignEnabled true
+            buildConfigField(BOOLEAN, ANTI_PIRACY, FALSE)
+            buildConfigField(BOOLEAN, SUBSTRATE_MODULE, FALSE)
         }
 
         appdebug {
@@ -40,6 +49,8 @@ android {
             minifyEnabled false
             debuggable true
             zipAlignEnabled true
+            buildConfigField(BOOLEAN, ANTI_PIRACY, FALSE)
+            buildConfigField(BOOLEAN, SUBSTRATE_MODULE, FALSE) 
         }
     }
 
@@ -57,4 +68,6 @@ dependencies {
 
     // PiracyChecker
     compile 'com.github.javiersantos:PiracyChecker:0.0.2'
+
+    compile project(':substrate')
 }
