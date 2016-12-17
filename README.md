@@ -1,4 +1,7 @@
 # BluEmerald
+
+[![Build Status](https://travis-ci.org/xdevs23/BluEmerald.svg?branch=master)](https://travis-ci.org/xdevs23/BluEmerald)
+
 A dark, blue and flat theme.
 
 ### License
