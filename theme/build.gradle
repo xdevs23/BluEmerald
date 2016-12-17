@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '25.0.2'
     defaultConfig {
         applicationId "io.xdevs23.theme.bluemerald.cm"
         minSdkVersion 21
@@ -64,7 +64,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     // AppCompat
-    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:appcompat-v7:25.1.0'
 
     // PiracyChecker
     compile 'com.github.javiersantos:PiracyChecker:0.0.2'
