@@ -31,4 +31,4 @@ before_install:
     - jdk_switcher use oraclejdk8
     - java -version
 #install: bash crosswalk/xwalkinstaller.sh auto --nominify
-script: ./buildDebugApp.sh nocert
+script: source buildDebugApp.sh nocert
