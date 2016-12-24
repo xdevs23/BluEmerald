@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '25.0.2'
     defaultConfig {
         applicationId "io.xdevs23.theme.bluemerald.cm"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 1230
-        versionName "1.2.3"
+        versionCode 1300
+        versionName "1.3.0"
     }
 
     signingConfigs {
@@ -21,17 +21,26 @@ android {
     }
 
     buildTypes {
+        def BOOLEAN = "boolean"
+        def TRUE = "true"
+        def FALSE = "false"
+        def ANTI_PIRACY = "ENABLE_ANTI_PIRACY"
+        def SUBSTRATE_MODULE = "SUBSTRATE_MODULE"
         release {
             //noinspection GroovyAssignabilityCheck
             signingConfig signingConfigs.main
             minifyEnabled false
             zipAlignEnabled true
+            buildConfigField(BOOLEAN, ANTI_PIRACY, FALSE)
+            buildConfigField(BOOLEAN, SUBSTRATE_MODULE, FALSE)
         }
 
         debug {
             minifyEnabled false
             debuggable true
             zipAlignEnabled true
+            buildConfigField(BOOLEAN, ANTI_PIRACY, FALSE)
+            buildConfigField(BOOLEAN, SUBSTRATE_MODULE, FALSE)
         }
 
         appdebug {
@@ -40,6 +49,8 @@ android {
             minifyEnabled false
             debuggable true
             zipAlignEnabled true
+            buildConfigField(BOOLEAN, ANTI_PIRACY, FALSE)
+            buildConfigField(BOOLEAN, SUBSTRATE_MODULE, FALSE) 
         }
     }
 
@@ -53,8 +64,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     // AppCompat
-    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:appcompat-v7:25.1.0'
 
     // PiracyChecker
     compile 'com.github.javiersantos:PiracyChecker:0.0.2'
+
+    compile project(':substrate')
 }

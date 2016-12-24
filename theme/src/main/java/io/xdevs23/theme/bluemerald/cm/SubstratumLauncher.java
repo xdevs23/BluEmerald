@@ -3,11 +3,16 @@ package io.xdevs23.theme.bluemerald.cm;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -15,6 +20,11 @@ import com.github.javiersantos.piracychecker.PiracyChecker;
 import com.github.javiersantos.piracychecker.PiracyCheckerUtils;
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerCallback;
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerError;
+
+import java.io.File;
+import java.util.ArrayList;
+
+import projekt.substrate.*;
 
 /**
  * @author Nicholas Chum (nicholaschum)
@@ -41,8 +51,15 @@ public class SubstratumLauncher extends Activity {
     // logcat.
     // If ENABLE_ANTI_PIRACY is false, you may skip this
     private static final String APK_SIGNATURE_PRODUCTION = "";
+    // TODO: Themers, this is your FOURTH step
+    private static final Boolean THEME_READY = false;
     //
     // END OF STATIC THEMER CRUISE CONTROL
+    /**
+     * Other variables/methods; do not modify
+     */
+
+    private static final String SUBSTRATUM_PACKAGE_NAME = "projekt.substratum";
 
 
     private String theme_mode = "";  // SUBSTRATUM INTERNAL USE: DO NOT TOUCH
@@ -97,12 +114,6 @@ public class SubstratumLauncher extends Activity {
         piracyChecker.start();
     }
 
-    /**
-     * Other variables/methods; do not modify
-     */
-
-    private static final String SUBSTRATUM_PACKAGE_NAME = "projekt.substratum";
-
     private boolean isPackageInstalled(String package_name) {
         PackageManager pm = getPackageManager();
         try {
@@ -153,34 +164,168 @@ public class SubstratumLauncher extends Activity {
     }
 
     private void launchSubstratum() {
-        Intent currentIntent = getIntent();
-        String theme_mode = currentIntent.getStringExtra("theme_mode");
-        if (theme_mode == null) theme_mode = "";
-        final boolean theme_legacy = currentIntent.getBooleanExtra("theme_legacy", false);
-        final boolean refresh_mode = currentIntent.getBooleanExtra("refresh_mode", false);
-
-        Intent intent = new Intent(Intent.ACTION_MAIN);
-        intent.setComponent(ComponentName.unflattenFromString(
-                "projekt.substratum/projekt.substratum.InformationActivity"));
-        intent.addCategory(Intent.CATEGORY_LAUNCHER);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.putExtra("theme_name", getString(R.string.ThemeName));
-        intent.putExtra("theme_pid", getPackageName());
-        intent.putExtra("theme_legacy", theme_legacy);
-        intent.putExtra("theme_mode", theme_mode);
-        intent.putExtra("refresh_mode", refresh_mode);
-        startActivity(intent);
+        Intent intent = LetsGetStarted.begin(getApplicationContext(),
+                getIntent(), getString(R.string.ThemeName), getPackageName(),
+                getString(R.string.unauthorized), BuildConfig.SUBSTRATE_MODULE);
+        if (intent != null) {
+            startActivity(intent);
+        }
         finish();
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (ENABLE_ANTI_PIRACY && !BuildConfig.DEBUG) {
+        SharedPreferences sharedPref = SubstratumLauncher.this.getPreferences(Context.MODE_PRIVATE);
+        int lastVersion = sharedPref.getInt("last_version", 0);
+
+        if (lastVersion == BuildConfig.VERSION_CODE) {
+            if (THEME_READY) {
+                detectThemeReady();
+            } else {
+                launch();
+            }
+        } else {
+            checkConnection();
+        }
+    }
+
+    private void launch() {
+        if (BuildConfig.ENABLE_ANTI_PIRACY && !BuildConfig.DEBUG) {
             startAntiPiracyCheck();
         } else {
             beginSubstratumLaunch();
         }
     }
+
+    private void detectThemeReady() {
+        File addon = new File("/system/addon.d/80-ThemeReady.sh");
+
+        if (addon.exists()) {
+            ArrayList<String> appname_arr = new ArrayList<>();
+            boolean updated = false;
+            String data_path = "/data/app/";
+            String[] app_folder = {"com.google.android.gm",
+                    "com.google.android.googlequicksearchbox",
+                    "com.android.vending",
+                    "com.google.android.apps.plus",
+                    "com.google.android.talk",
+                    "com.google.android.youtube",
+                    "com.google.android.apps.photos",
+                    "com.google.android.contacts",
+                    "com.google.android.dialer"};
+            String folder1 = "-1";
+            String folder2 = "-2";
+            String apk_path = "/base.apk";
+            StringBuilder app_name = new StringBuilder();
+
+            for (int i = 0; i < app_folder.length; i++) {
+                File app1 = new File(data_path + app_folder[i] + folder1 + apk_path);
+                File app2 = new File(data_path + app_folder[i] + folder2 + apk_path);
+                if (app1.exists() || app2.exists()) {
+                    try {
+                        updated = true;
+                        ApplicationInfo app =
+                                this.getPackageManager().getApplicationInfo(app_folder[i], 0);
+                        String label = getPackageManager().getApplicationLabel(app).toString();
+
+                        appname_arr.add(label);
+                    } catch (PackageManager.NameNotFoundException e) {
+                        //gotta catch them all
+                    }
+                }
+            }
+
+            for (int i = 0; i < appname_arr.size(); i++) {
+                app_name.append(appname_arr.get(i));
+                if (i <= appname_arr.size() - 3) {
+                    app_name.append(", ");
+                } else if (i == appname_arr.size() - 2) {
+                    app_name.append(" and ");
+                }
+            }
+
+            if (!updated) {
+                launch();
+            } else {
+                String parse = String.format(getString(R.string.theme_ready_updated),
+                        app_name);
+
+                new AlertDialog.Builder(SubstratumLauncher.this, android.R.style
+                        .Theme_DeviceDefault_Light_Dialog_Alert)
+                        .setIcon(R.mipmap.m_app_icon)
+                        .setTitle(getString(R.string.ThemeName))
+                        .setMessage(parse)
+                        .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                launch();
+                            }
+                        })
+                        .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        })
+                        .setOnCancelListener(new DialogInterface.OnCancelListener() {
+                            @Override
+                            public void onCancel(DialogInterface dialogInterface) {
+                                finish();
+                            }
+                        })
+                        .show();
+            }
+        } else {
+            new AlertDialog.Builder(SubstratumLauncher.this, android.R.style
+                    .Theme_DeviceDefault_Light_Dialog_Alert)
+                    .setIcon(R.mipmap.m_app_icon)
+                    .setTitle(getString(R.string.ThemeName))
+                    .setMessage(getString(R.string.theme_ready_not_detected))
+                    .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            launch();
+                        }
+                    })
+                    .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                        }
+                    })
+                    .setOnCancelListener(new DialogInterface.OnCancelListener() {
+                        @Override
+                        public void onCancel(DialogInterface dialogInterface) {
+                            finish();
+                        }
+                    })
+                    .show();
+        }
+    }
+
+    private void checkConnection() {
+        ConnectivityManager cm =
+                (ConnectivityManager)
+                        SubstratumLauncher.this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        boolean isConnected = activeNetwork != null &&
+                activeNetwork.isConnectedOrConnecting();
+
+        if (!isConnected) {
+            Toast toast = Toast.makeText(this, R.string.toast_internet,
+                    Toast.LENGTH_LONG);
+            toast.show();
+            finish();
+        } else {
+            SharedPreferences sharedPref =
+                    SubstratumLauncher.this.getPreferences(Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putInt("last_version", BuildConfig.VERSION_CODE);
+            editor.apply();
+
+            if (THEME_READY) {
+                detectThemeReady();
+            } else {
+                launch();
+            }
+        }
+    }
+
 }
