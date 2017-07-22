@@ -56,7 +56,7 @@
         <!-- SUBSTRATUM INTERNAL USE: DO NOT TOUCH -->
         <meta-data
             android:name="Substratum_Plugin"
-            android:value="6.0.0"/>
+            android:value="10.0.1"/>
 
         <meta-data android:name="org.cyanogenmod.theme.name" android:value="@string/theme_name"/>
         <meta-data android:name="org.cyanogenmod.theme.author" android:value="@string/theme_author" />
