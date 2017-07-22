@@ -171,4 +171,7 @@
     <color name="memory_max_use">#ff009587</color>
     <color name="memory_remaining">#ffced7db</color>
 
+    <!-- https://github.com/halogenOS/android_packages_apps_Settings/commit/88d513e57ed144c9465fbfe2b514823d530601bb -->
+    <color name="external_icon_tint">@*common:color/accent</color>
+
 </resources>
